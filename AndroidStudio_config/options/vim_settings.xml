@@ -1,0 +1,946 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks>
+      <mark key="A" line="40" column="11" filename="D:/AndroidStudioProjects/hlixin_android/好利信/src/com/haolixin/activity/ShowPhotoActivity.java" />
+    </globalmarks>
+    <filemarks>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/IfdData.java" timestamp="1465789164882">
+        <mark key="'" line="105" column="0" />
+        <mark key="[" line="39" column="0" />
+        <mark key="]" line="39" column="0" />
+        <mark key="^" line="105" column="0" />
+        <mark key="." line="39" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/res/layout/adapter_info_list.xml" timestamp="1466574317330">
+        <mark key="[" line="35" column="9" />
+        <mark key="]" line="35" column="17" />
+        <mark key="." line="35" column="17" />
+        <mark key="^" line="35" column="17" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/ImageCache.java" timestamp="1466473997752">
+        <mark key="[" line="9" column="4" />
+        <mark key="]" line="9" column="4" />
+        <mark key="^" line="9" column="4" />
+        <mark key="." line="9" column="4" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/util/ImageUtils.java" timestamp="1466649520540">
+        <mark key="[" line="10" column="16" />
+        <mark key="]" line="10" column="11" />
+        <mark key="." line="10" column="11" />
+        <mark key="^" line="10" column="11" />
+      </file>
+      <file name="D:/AndroidStudioProjects/glide/library/src/main/java/com/bumptech/glide/Glide.java" timestamp="1466662489631">
+        <mark key="[" line="133" column="6" />
+        <mark key="]" line="133" column="3" />
+        <mark key="^" line="133" column="3" />
+        <mark key="." line="133" column="3" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/ApiHelper.java" timestamp="1465788342421">
+        <mark key="[" line="8" column="65" />
+        <mark key="]" line="8" column="117" />
+        <mark key="^" line="8" column="117" />
+        <mark key="." line="8" column="117" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/jocoo/imageloader/utils/Utils.java" timestamp="1466570312006">
+        <mark key="[" line="23" column="49" />
+        <mark key="]" line="23" column="49" />
+        <mark key="." line="23" column="49" />
+        <mark key="^" line="23" column="49" />
+      </file>
+      <file name="$USER_HOME$/Desktop/WaveDemo/app/src/main/java/com/jocoo/wavedemo/Circle.java" timestamp="1466405321737">
+        <mark key="'" line="15" column="29" />
+        <mark key="[" line="17" column="51" />
+        <mark key="]" line="17" column="54" />
+        <mark key="." line="17" column="54" />
+        <mark key="^" line="17" column="54" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/utils/Utils.java" timestamp="1466583550915">
+        <mark key="]" line="96" column="35" />
+        <mark key="^" line="96" column="35" />
+        <mark key="." line="96" column="35" />
+      </file>
+      <file name="$USER_HOME$/Desktop/TextDemo/app/src/main/java/com/jocoo/textdemo/CenterTextView.java" timestamp="1466045123434">
+        <mark key="'" line="11" column="0" />
+        <mark key="[" line="36" column="29" />
+        <mark key="]" line="38" column="31" />
+        <mark key="." line="38" column="31" />
+        <mark key="^" line="38" column="31" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/LoadingDialog.java" timestamp="1466409417430">
+        <mark key="'" line="55" column="20" />
+        <mark key="[" line="149" column="0" />
+        <mark key="]" line="149" column="0" />
+        <mark key="." line="149" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/util/GifLoader.java" timestamp="1466574244444">
+        <mark key="[" line="45" column="57" />
+        <mark key="]" line="46" column="70" />
+        <mark key="." line="46" column="70" />
+        <mark key="^" line="46" column="70" />
+      </file>
+      <file name="$USER_HOME$/Desktop/CircleDemo/app/src/main/java/com/yiw/circledemo/spannable/CircleMovementMethod.java" timestamp="1466146477615">
+        <mark key="'" line="112" column="25" />
+        <mark key="[" line="112" column="15" />
+        <mark key="]" line="112" column="20" />
+        <mark key="." line="112" column="20" />
+        <mark key="^" line="112" column="20" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/idea_workspace/Idea/src/com/mobisoft/ideaDeveloper/adapter/FriendUpdateAdapter.java" timestamp="1461736643564">
+        <mark key="'" line="293" column="81" />
+        <mark key="[" line="122" column="82" />
+        <mark key="]" line="122" column="82" />
+        <mark key="^" line="366" column="59" />
+        <mark key="." line="122" column="82" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/ExifTag.java" timestamp="1465789023826">
+        <mark key="'" line="335" column="1" />
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="^" line="335" column="1" />
+        <mark key="." line="5" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/AndroidManifest.xml" timestamp="1466587504147">
+        <mark key="[" line="9" column="40" />
+        <mark key="]" line="10" column="35" />
+        <mark key="^" line="10" column="35" />
+        <mark key="." line="10" column="35" />
+      </file>
+      <file name="$USER_HOME$/Desktop/TextDemo/app/src/main/res/layout/activity_main.xml" timestamp="1466144552354">
+        <mark key="[" line="11" column="31" />
+        <mark key="]" line="11" column="42" />
+        <mark key="." line="11" column="42" />
+        <mark key="^" line="11" column="42" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/Images.java" timestamp="1466565011151">
+        <mark key="'" line="91" column="16" />
+        <mark key="[" line="93" column="91" />
+        <mark key="]" line="94" column="101" />
+        <mark key="^" line="94" column="101" />
+        <mark key="." line="94" column="101" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/java/com/jocoo/demo/MainActivity.java" timestamp="1464339138381">
+        <mark key="'" line="22" column="19" />
+        <mark key="[" line="43" column="0" />
+        <mark key="]" line="48" column="32" />
+        <mark key="^" line="48" column="32" />
+        <mark key="." line="48" column="32" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" timestamp="1466558832220">
+        <mark key="'" line="91" column="0" />
+        <mark key="[" line="68" column="25" />
+        <mark key="]" line="68" column="30" />
+        <mark key="^" line="68" column="30" />
+        <mark key="." line="68" column="30" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" timestamp="1466582900357">
+        <mark key="[" line="28" column="8" />
+        <mark key="]" line="28" column="8" />
+        <mark key="." line="28" column="13" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" timestamp="1466582969469">
+        <mark key="'" line="25" column="4" />
+        <mark key="[" line="13" column="23" />
+        <mark key="]" line="13" column="35" />
+        <mark key="." line="13" column="35" />
+        <mark key="^" line="13" column="35" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/GifMovieView.java" timestamp="1466574590344">
+        <mark key="[" line="144" column="0" />
+        <mark key="]" line="144" column="0" />
+        <mark key="." line="144" column="0" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/Utils.java" timestamp="1465788778898">
+        <mark key="[" line="30" column="0" />
+        <mark key="]" line="30" column="0" />
+        <mark key="." line="30" column="0" />
+        <mark key="^" line="28" column="21" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" timestamp="1466492910696">
+        <mark key="'" line="33" column="0" />
+        <mark key="[" line="13" column="23" />
+        <mark key="]" line="13" column="27" />
+        <mark key="." line="13" column="27" />
+        <mark key="^" line="13" column="27" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/PriorityThreadFactory.java" timestamp="1465786993349">
+        <mark key="[" line="22" column="31" />
+        <mark key="]" line="23" column="61" />
+        <mark key="^" line="23" column="61" />
+        <mark key="." line="23" column="61" />
+      </file>
+      <file name="D:/AndroidStudioProjects/ViewPagerDemo/app/src/main/res/layout/activity_main.xml" timestamp="1462255758121">
+        <mark key="[" line="9" column="0" />
+        <mark key="]" line="9" column="0" />
+        <mark key="." line="9" column="0" />
+        <mark key="^" line="13" column="39" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/MyApplication.java" timestamp="1466587748327">
+        <mark key="[" line="19" column="28" />
+        <mark key="]" line="20" column="44" />
+        <mark key="." line="20" column="44" />
+        <mark key="^" line="20" column="44" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/java/com/jocoo/demo/mvp/view/IDataView.java" timestamp="1461918526850">
+        <mark key="[" line="7" column="27" />
+        <mark key="]" line="8" column="18" />
+        <mark key="." line="8" column="18" />
+        <mark key="^" line="8" column="18" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/MediaDetails.java" timestamp="1465788869179">
+        <mark key="'" line="143" column="1" />
+        <mark key="[" line="7" column="0" />
+        <mark key="]" line="7" column="0" />
+        <mark key="^" line="143" column="1" />
+        <mark key="." line="7" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/java/com/jocoo/demo/mvp/presenter/DataPresenter.java" timestamp="1461919748264">
+        <mark key="[" line="30" column="5" />
+        <mark key="]" line="31" column="3" />
+        <mark key="." line="31" column="3" />
+        <mark key="^" line="31" column="3" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/commonlibrary/build.gradle" timestamp="1461720532952">
+        <mark key="[" line="4" column="28" />
+        <mark key="]" line="4" column="28" />
+        <mark key="." line="4" column="28" />
+        <mark key="^" line="4" column="24" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/IdentityCache.java" timestamp="1465788666569">
+        <mark key="'" line="59" column="24" />
+        <mark key="[" line="7" column="32" />
+        <mark key="]" line="7" column="32" />
+        <mark key="^" line="59" column="4" />
+        <mark key="." line="7" column="32" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/ImageLoader.java" timestamp="1466583902220">
+        <mark key="[" line="114" column="47" />
+        <mark key="]" line="114" column="47" />
+        <mark key="." line="114" column="47" />
+        <mark key="^" line="114" column="13" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/activity/ImagePagerActivity.java" timestamp="1466649736461">
+        <mark key="[" line="206" column="49" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/res/layout/activity_main.xml" timestamp="1464760159236">
+        <mark key="'" line="28" column="11" />
+        <mark key="[" line="7" column="44" />
+        <mark key="]" line="7" column="74" />
+        <mark key="^" line="7" column="44" />
+        <mark key="." line="7" column="44" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/ImageDisplay.java" timestamp="1466583365353">
+        <mark key="[" line="5" column="43" />
+        <mark key="]" line="5" column="48" />
+        <mark key="." line="5" column="48" />
+        <mark key="^" line="5" column="48" />
+      </file>
+      <file name="$USER_HOME$/Desktop/TextDemo/app/src/main/res/values/attr.xml" timestamp="1466041967639">
+        <mark key="[" line="6" column="25" />
+        <mark key="]" line="6" column="25" />
+        <mark key="." line="6" column="25" />
+        <mark key="^" line="6" column="25" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/jocoo/imageloader/ImageLoader.java" timestamp="1466567606299">
+        <mark key="[" line="95" column="40" />
+        <mark key="]" line="97" column="52" />
+        <mark key="^" line="97" column="52" />
+        <mark key="." line="97" column="52" />
+      </file>
+      <file name="D:/AndroidStudioProjects/PinchImageView/pinchimageview/src/main/java/com/boycy815/pinchimageview/PinchImageView.java" timestamp="1462265920298">
+        <mark key="'" line="1521" column="57" />
+        <mark key="[" line="524" column="0" />
+        <mark key="]" line="524" column="0" />
+        <mark key="." line="524" column="0" />
+        <mark key="^" line="519" column="28" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/java/com/jocoo/demo/adapter/DataAdapter.java" timestamp="1461920711619">
+        <mark key="'" line="57" column="0" />
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="." line="13" column="0" />
+        <mark key="^" line="46" column="55" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/idea/idea/src/main/java/com/mobisoft/ideaDeveloper/AppConfig.java" timestamp="1465718153612">
+        <mark key="[" line="13" column="50" />
+        <mark key="]" line="13" column="61" />
+        <mark key="." line="13" column="61" />
+        <mark key="^" line="13" column="61" />
+      </file>
+      <file name="D:/AndroidStudioProjects/hlixin_android/好利信/src/com/haolixin/activity/ShowPhotoActivity.java" timestamp="1466643854804" />
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FutureListener.java" timestamp="1466490705963">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="^" line="2" column="15" />
+        <mark key="." line="2" column="0" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/Path.java" timestamp="1465788593900">
+        <mark key="'" line="224" column="4" />
+        <mark key="[" line="9" column="19" />
+        <mark key="]" line="224" column="4" />
+        <mark key="^" line="224" column="4" />
+        <mark key="." line="224" column="4" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/adapter/InfoListAdapter.java" timestamp="1466574554603">
+        <mark key="'" line="96" column="41" />
+        <mark key="[" line="100" column="0" />
+        <mark key="]" line="100" column="0" />
+        <mark key="." line="100" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/utils/Utils.java" timestamp="1466570442455">
+        <mark key="'" line="19" column="63" />
+        <mark key="[" line="23" column="49" />
+        <mark key="]" line="23" column="49" />
+        <mark key="." line="23" column="49" />
+        <mark key="^" line="26" column="62" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/idea/src/main/AndroidManifest.xml" timestamp="1461736166197">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="858" column="27" />
+        <mark key="]" line="858" column="58" />
+        <mark key="." line="858" column="58" />
+        <mark key="^" line="858" column="58" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" timestamp="1466587906371">
+        <mark key="'" line="88" column="12" />
+        <mark key="[" line="209" column="28" />
+        <mark key="]" line="210" column="23" />
+        <mark key="^" line="210" column="23" />
+        <mark key="." line="210" column="23" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" timestamp="1466584076568">
+        <mark key="[" line="58" column="0" />
+        <mark key="]" line="58" column="0" />
+        <mark key="." line="58" column="0" />
+        <mark key="^" line="59" column="8" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/util/GifLoader.java" timestamp="1466579182022">
+        <mark key="[" line="43" column="0" />
+        <mark key="]" line="45" column="60" />
+        <mark key="." line="45" column="60" />
+        <mark key="^" line="45" column="60" />
+      </file>
+      <file name="$USER_HOME$/Desktop/WaveDemo/app/src/main/java/com/jocoo/wavedemo/WaveView.java" timestamp="1466405628751">
+        <mark key="'" line="45" column="50" />
+        <mark key="[" line="89" column="0" />
+        <mark key="]" line="89" column="0" />
+        <mark key="." line="89" column="0" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/adapter/InfoListAdapter.java" timestamp="1466660002945">
+        <mark key="'" line="101" column="19" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/ImageCache.java" timestamp="1466500407001">
+        <mark key="'" line="5" column="30" />
+        <mark key="[" line="6" column="4" />
+        <mark key="]" line="6" column="9" />
+        <mark key="." line="6" column="9" />
+        <mark key="^" line="6" column="9" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/idea/src/main/java/com/mobisoft/ideaDeveloper/fragment/main/CommunityFragment.java" timestamp="1461739265107">
+        <mark key="'" line="119" column="33" />
+        <mark key="[" line="148" column="39" />
+        <mark key="]" line="149" column="51" />
+        <mark key="^" line="149" column="51" />
+        <mark key="." line="149" column="51" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/third/PullToRefresh/build.gradle" timestamp="1466407390854">
+        <mark key="[" line="3" column="23" />
+        <mark key="]" line="3" column="23" />
+        <mark key="." line="3" column="23" />
+        <mark key="^" line="3" column="23" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" timestamp="1466493373894">
+        <mark key="'" line="69" column="12" />
+        <mark key="[" line="105" column="24" />
+        <mark key="]" line="105" column="24" />
+        <mark key="." line="105" column="24" />
+        <mark key="^" line="134" column="28" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/idea/src/main/java/com/mobisoft/ideaDeveloper/adapter/CommentAdapter.java" timestamp="1461663019845">
+        <mark key="[" line="35" column="31" />
+        <mark key="]" line="35" column="48" />
+        <mark key="^" line="61" column="34" />
+        <mark key="." line="61" column="34" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DownloadResult.java" timestamp="1466499231015">
+        <mark key="[" line="22" column="0" />
+        <mark key="]" line="22" column="0" />
+        <mark key="^" line="11" column="17" />
+        <mark key="." line="22" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DiskLruCache.java" timestamp="1466477825888">
+        <mark key="'" line="968" column="0" />
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="17" column="0" />
+        <mark key="^" line="968" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/build.gradle" timestamp="1466407386058">
+        <mark key="[" line="8" column="23" />
+        <mark key="]" line="8" column="23" />
+        <mark key="." line="8" column="23" />
+        <mark key="^" line="8" column="23" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/MainActivity.java" timestamp="1465959569349">
+        <mark key="'" line="41" column="10" />
+        <mark key="[" line="33" column="0" />
+        <mark key="]" line="41" column="8" />
+        <mark key="." line="35" column="0" />
+        <mark key="^" line="61" column="54" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/MediaObject.java" timestamp="1465789405844">
+        <mark key="'" line="58" column="20" />
+        <mark key="[" line="7" column="7" />
+        <mark key="]" line="7" column="15" />
+        <mark key="^" line="7" column="15" />
+        <mark key="." line="7" column="15" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageDisplay.java" timestamp="1466500944364">
+        <mark key="[" line="5" column="43" />
+        <mark key="]" line="5" column="48" />
+        <mark key="^" line="5" column="48" />
+        <mark key="." line="5" column="48" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/MainActivity.java" timestamp="1466564949980">
+        <mark key="'" line="47" column="0" />
+        <mark key="[" line="64" column="26" />
+        <mark key="]" line="65" column="36" />
+        <mark key="." line="65" column="36" />
+        <mark key="^" line="65" column="36" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/appConfig/MyApplication.java" timestamp="1466584606404">
+        <mark key="[" line="83" column="17" />
+        <mark key="]" line="84" column="7" />
+        <mark key="." line="84" column="7" />
+        <mark key="^" line="84" column="7" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/commonlibrary/src/main/AndroidManifest.xml" timestamp="1461719702755">
+        <mark key="[" line="10" column="34" />
+        <mark key="]" line="10" column="34" />
+        <mark key="." line="10" column="34" />
+        <mark key="^" line="10" column="34" />
+      </file>
+      <file name="D:/AndroidStudioProjects/huanxin/examples/easeui/src/com/easemob/easeui/ui/EaseContactListFragment.java" timestamp="1461638714058">
+        <mark key="'" line="76" column="60" />
+        <mark key="[" line="194" column="79" />
+        <mark key="]" line="194" column="82" />
+        <mark key="." line="194" column="82" />
+        <mark key="^" line="194" column="82" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/FutureListener.java" timestamp="1465790442266">
+        <mark key="[" line="6" column="22" />
+        <mark key="]" line="6" column="58" />
+        <mark key="^" line="6" column="58" />
+        <mark key="." line="6" column="58" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/MediaSet.java" timestamp="1465789849423">
+        <mark key="'" line="331" column="0" />
+        <mark key="[" line="54" column="0" />
+        <mark key="]" line="54" column="68" />
+        <mark key="^" line="331" column="0" />
+        <mark key="." line="54" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/res/values/dimens.xml" timestamp="1466495387843">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="7" column="11" />
+        <mark key="." line="7" column="11" />
+        <mark key="^" line="7" column="11" />
+      </file>
+      <file name="$USER_HOME$/Desktop/Android-JSONTool/sample/src/main/java/com/kevin/jsontool/sample/MainActivity.java" timestamp="1465960397998">
+        <mark key="[" line="49" column="67" />
+        <mark key="]" line="52" column="0" />
+        <mark key="^" line="52" column="0" />
+        <mark key="." line="52" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" timestamp="1466493632501">
+        <mark key="[" line="10" column="38" />
+        <mark key="]" line="10" column="38" />
+        <mark key="." line="10" column="38" />
+        <mark key="^" line="28" column="13" />
+      </file>
+      <file name="$USER_HOME$/Desktop/TextDemo/app/src/main/java/com/jocoo/textdemo/ScrollTextView.java" timestamp="1466144245318">
+        <mark key="[" line="30" column="0" />
+        <mark key="]" line="35" column="10" />
+        <mark key="." line="25" column="3" />
+        <mark key="^" line="25" column="3" />
+      </file>
+      <file name="$USER_HOME$/Desktop/CircleDemo/app/build.gradle" timestamp="1466140651737">
+        <mark key="[" line="4" column="26" />
+        <mark key="]" line="4" column="28" />
+        <mark key="." line="4" column="28" />
+        <mark key="^" line="4" column="28" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" timestamp="1466559572297">
+        <mark key="'" line="31" column="23" />
+        <mark key="[" line="10" column="37" />
+        <mark key="]" line="16" column="9" />
+        <mark key="." line="16" column="9" />
+        <mark key="^" line="16" column="9" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" timestamp="1466500847082">
+        <mark key="'" line="32" column="8" />
+        <mark key="[" line="28" column="8" />
+        <mark key="]" line="28" column="13" />
+        <mark key="^" line="28" column="13" />
+        <mark key="." line="28" column="13" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageCache.java" timestamp="1466492728456">
+        <mark key="[" line="4" column="4" />
+        <mark key="]" line="4" column="9" />
+        <mark key="." line="4" column="9" />
+        <mark key="^" line="4" column="9" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/idea/src/main/java/com/mobisoft/ideaDeveloper/adapter/FriendUpdateAdapter.java" timestamp="1461740011490">
+        <mark key="'" line="206" column="41" />
+        <mark key="[" line="206" column="46" />
+        <mark key="]" line="206" column="68" />
+        <mark key="^" line="206" column="68" />
+        <mark key="." line="206" column="68" />
+      </file>
+      <file name="$USER_HOME$/Desktop/WaveDemo/app/build.gradle" timestamp="1466388706543">
+        <mark key="[" line="3" column="23" />
+        <mark key="]" line="3" column="23" />
+        <mark key="." line="3" column="23" />
+        <mark key="^" line="3" column="23" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/appConfig/MyApplication.java" timestamp="1466573664002">
+        <mark key="[" line="62" column="9" />
+        <mark key="]" line="63" column="26" />
+        <mark key="^" line="63" column="26" />
+        <mark key="." line="63" column="26" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/AndroidManifest.xml" timestamp="1462436248778">
+        <mark key="'" line="9" column="34" />
+        <mark key="[" line="11" column="55" />
+        <mark key="]" line="11" column="65" />
+        <mark key="." line="11" column="65" />
+        <mark key="^" line="11" column="65" />
+      </file>
+      <file name="$USER_HOME$/Desktop/WaveDemo/app/src/main/res/values/attrs.xml" timestamp="1466392799549">
+        <mark key="[" line="5" column="20" />
+        <mark key="]" line="5" column="22" />
+        <mark key="^" line="5" column="22" />
+        <mark key="." line="5" column="22" />
+      </file>
+      <file name="D:/AndroidStudioProjects/GradleAndroidGallery3D/app/src/main/java/com/jocoo/gallery3d/app/GalleryActivity.java" timestamp="1462781555601">
+        <mark key="[" line="60" column="76" />
+        <mark key="]" line="60" column="75" />
+        <mark key="." line="60" column="75" />
+        <mark key="^" line="60" column="75" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/java/com/jocoo/demo/mvp/model/DataModel.java" timestamp="1461919840048">
+        <mark key="[" line="33" column="15" />
+        <mark key="]" line="33" column="32" />
+        <mark key="^" line="33" column="32" />
+        <mark key="." line="33" column="32" />
+      </file>
+      <file name="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/PhotoWallAdapter.java" timestamp="1466586863077">
+        <mark key="'" line="57" column="25" />
+        <mark key="[" line="24" column="52" />
+        <mark key="]" line="24" column="52" />
+        <mark key="." line="24" column="52" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" timestamp="1466649649269">
+        <mark key="[" line="202" column="0" />
+        <mark key="]" line="202" column="0" />
+        <mark key="^" line="204" column="58" />
+        <mark key="." line="202" column="0" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/idea/build.gradle" timestamp="1461720137822">
+        <mark key="[" line="11" column="25" />
+        <mark key="]" line="13" column="15" />
+        <mark key="^" line="13" column="15" />
+        <mark key="." line="13" column="15" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/ImageCache.java" timestamp="1466582880243">
+        <mark key="[" line="4" column="4" />
+        <mark key="]" line="4" column="8" />
+        <mark key="." line="4" column="8" />
+        <mark key="^" line="4" column="8" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/IfdId.java" timestamp="1465789096994">
+        <mark key="'" line="139" column="0" />
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="^" line="139" column="0" />
+        <mark key="." line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/MediaItem.java" timestamp="1465789907569">
+        <mark key="'" line="117" column="1" />
+        <mark key="[" line="9" column="0" />
+        <mark key="]" line="9" column="0" />
+        <mark key="^" line="117" column="1" />
+        <mark key="." line="9" column="0" />
+      </file>
+      <file name="D:/AndroidStudioProjects/PinchImageView/pinchimageviewexample/build.gradle" timestamp="1462256311085">
+        <mark key="[" line="4" column="23" />
+        <mark key="]" line="4" column="29" />
+        <mark key="." line="4" column="23" />
+        <mark key="^" line="4" column="22" />
+      </file>
+      <file name="$USER_HOME$/Desktop/WaveDemo/app/src/main/java/com/jocoo/wavedemo/MainActivity.java" timestamp="1466404352500">
+        <mark key="[" line="18" column="25" />
+        <mark key="]" line="18" column="33" />
+        <mark key="^" line="18" column="33" />
+        <mark key="." line="18" column="33" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/res/layout/adapter_info_list.xml" timestamp="1466577338281">
+        <mark key="[" line="35" column="9" />
+        <mark key="]" line="35" column="17" />
+        <mark key="." line="35" column="17" />
+        <mark key="^" line="35" column="17" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/BucketHelper.java" timestamp="1465797739528">
+        <mark key="'" line="145" column="35" />
+        <mark key="[" line="146" column="22" />
+        <mark key="]" line="146" column="25" />
+        <mark key="^" line="146" column="25" />
+        <mark key="." line="146" column="25" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/java/com/jocoo/actionbaroverlaydemo/Future.java" timestamp="1465787374591">
+        <mark key="[" line="5" column="28" />
+        <mark key="]" line="10" column="19" />
+        <mark key="." line="10" column="19" />
+        <mark key="^" line="10" column="19" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/ActionBarOverlayDemo/app/src/main/res/values/styles.xml" timestamp="1465794799285">
+        <mark key="[" line="3" column="35" />
+        <mark key="]" line="3" column="58" />
+        <mark key="." line="5" column="60" />
+        <mark key="^" line="3" column="58" />
+      </file>
+      <file name="D:/AndroidStudioProjects/glide/third_party/gif_decoder/build.gradle" timestamp="1466647805885">
+        <mark key="[" line="11" column="45" />
+        <mark key="]" line="11" column="45" />
+        <mark key="." line="11" column="45" />
+      </file>
+      <file name="D:/AndroidStudioProjects/GradleAndroidGallery3D/app/build.gradle" timestamp="1462758166208">
+        <mark key="[" line="11" column="44" />
+        <mark key="]" line="11" column="44" />
+        <mark key="." line="11" column="44" />
+        <mark key="^" line="11" column="48" />
+      </file>
+      <file name="$USER_HOME$/Desktop/hlixin_android/Idea/idea/src/main/java/com/mobisoft/view/pullrefreshview/PullToRefreshListView.java" timestamp="1461660891148">
+        <mark key="'" line="62" column="13" />
+        <mark key="[" line="335" column="5" />
+        <mark key="]" line="339" column="4" />
+        <mark key="^" line="339" column="4" />
+        <mark key="." line="339" column="4" />
+      </file>
+      <file name="D:/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_main.xml" timestamp="1464339239251">
+        <mark key="[" line="15" column="28" />
+        <mark key="]" line="15" column="34" />
+        <mark key="." line="15" column="34" />
+        <mark key="^" line="15" column="34" />
+      </file>
+      <file name="$USER_HOME$/Desktop/TextDemo/app/src/main/java/com/jocoo/textdemo/MainActivity.java" timestamp="1466145027694">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="9" column="34" />
+        <mark key="]" line="9" column="34" />
+        <mark key="^" line="12" column="16" />
+        <mark key="." line="9" column="34" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="44" column="35" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="123" column="60" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="124" column="49" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="38" column="16" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="70" column="12" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="164" column="42" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="45" column="25" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="127" column="8" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="186" column="38" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="73" column="11" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="280" column="24" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/GifMovieView.java" />
+      <jump line="22" column="13" filename="D:/Android/sdk/sources/android-23/android/graphics/Movie.java" />
+      <jump line="35" column="12" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/GifMovieView.java" />
+      <jump line="82" column="12" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/GifMovieView.java" />
+      <jump line="65" column="41" filename="D:/AndroidStudioProjects/Score/score/src/main/java/com/example/score/ui/view/GifMovieView.java" />
+      <jump line="28" column="4" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="25" column="25" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="40" column="32" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="30" column="32" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="40" column="4" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="955" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DiskLruCache.java" />
+      <jump line="45" column="21" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="46" column="57" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="48" column="32" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="50" column="32" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="55" column="15" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="66" column="31" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="18" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="155" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="66" column="58" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="13" column="50" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="0" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="43" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="35" column="4" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="33" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/MemoryCache.java" />
+      <jump line="78" column="16" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="0" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="167" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="156" column="4" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="107" column="24" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="69" column="12" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="101" column="17" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/FileCache.java" />
+      <jump line="0" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="43" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="13" column="8" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="4" column="46" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="5" column="23" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="6" column="21" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="8" column="17" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/DoubleCache.java" />
+      <jump line="81" column="11" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="17" column="24" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="0" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="118" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="67" column="4" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="85" column="11" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="39" column="40" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="0" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/res/values/dimens.xml" />
+      <jump line="90" column="6" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/Images.java" />
+      <jump line="63" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/MainActivity.java" />
+      <jump line="15" column="27" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/PhotoWallAdapter.java" />
+      <jump line="51" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/PhotoWallAdapter.java" />
+      <jump line="53" column="19" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/PhotoWallAdapter.java" />
+      <jump line="47" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/MainActivity.java" />
+      <jump line="70" column="12" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="75" column="12" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="49" column="52" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" />
+      <jump line="2" column="28" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="0" column="29" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="33" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="5" column="18" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="6" column="34" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="11" column="43" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="13" column="50" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="20" column="37" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="19" column="12" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="3" column="30" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/ImageCache.java" />
+      <jump line="4" column="13" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" />
+      <jump line="0" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" />
+      <jump line="21" column="37" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" />
+      <jump line="27" column="16" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" />
+      <jump line="15" column="32" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" />
+      <jump line="64" column="37" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" />
+      <jump line="77" column="16" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" />
+      <jump line="123" column="12" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" />
+      <jump line="31" column="23" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="32" column="8" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/DoubleCache.java" />
+      <jump line="183" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="57" column="25" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/PhotoWallAdapter.java" />
+      <jump line="19" column="63" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/utils/Utils.java" />
+      <jump line="92" column="0" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/imagecache/FileCache.java" />
+      <jump line="89" column="12" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/imageloader/ImageLoader.java" />
+      <jump line="91" column="16" filename="D:/AndroidStudioProjects/CacheDemo/app/src/main/java/com/jocoo/cachedemo/Images.java" />
+      <jump line="26" column="23" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/utils/Utils.java" />
+      <jump line="7" column="29" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="34" column="0" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="27" column="4" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/jocoo/imageloader/imagecache/MemoryCache.java" />
+      <jump line="231" column="8" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/view/MultiImageView.java" />
+      <jump line="110" column="24" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/adapter/InfoListAdapter.java" />
+      <jump line="115" column="0" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/adapter/InfoListAdapter.java" />
+      <jump line="101" column="19" filename="$USER_HOME$/Desktop/hlixin_android/Score/score/src/main/java/com/example/score/ui/adapter/InfoListAdapter.java" />
+    </jumps>
+    <registers>
+      <register name="a" type="4">
+        <keys>
+          <key char="65535" code="27" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="65535" code="27" mods="0" />
+        </keys>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">Ly8gICAgICAgICAgICAgICAgR2lmTG9hZGVyLmdldEluc3RhbmNlKCkuZGlzUGxheShjb250ZXh0LCBpbWFnZVZpZXcsIGltZwo=</text>
+      </register>
+      <register name="-" type="4">
+        <text>u</text>
+      </register>
+      <register name="/" type="4">
+        <text>File</text>
+      </register>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgSW1hZ2VVdGlscy5sb2FkSW1hZ2UobUNvbnRleHQsIGhvbGRlci5pbWFnZVZpZXcsIGl0ZW0uZ2V0SW1hZ2Vfbm8oKSk7Cg==</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">Ly8gICAgICAgICAgICAgICAgR2lmTG9hZGVyLmdldEluc3RhbmNlKCkuZGlzUGxheShjb250ZXh0LCBpbWFnZVZpZXcsIGltZwo=</text>
+      </register>
+      <register name="q" type="4">
+        <keys>
+          <key char="47" code="0" mods="0" />
+          <key char="98" code="0" mods="0" />
+          <key char="121" code="0" mods="0" />
+          <key char="116" code="0" mods="0" />
+          <key char="101" code="0" mods="0" />
+          <key char="91" code="0" mods="0" />
+          <key char="93" code="0" mods="0" />
+          <key char="65535" code="10" mods="0" />
+          <key char="118" code="0" mods="0" />
+          <key char="108" code="0" mods="0" />
+          <key char="108" code="0" mods="0" />
+          <key char="108" code="0" mods="0" />
+          <key char="108" code="0" mods="0" />
+          <key char="108" code="0" mods="0" />
+          <key char="99" code="0" mods="0" />
+          <key char="66" code="0" mods="0" />
+          <key char="105" code="0" mods="0" />
+          <key char="116" code="0" mods="0" />
+          <key char="109" code="0" mods="0" />
+          <key char="97" code="0" mods="0" />
+          <key char="112" code="0" mods="0" />
+          <key char="65535" code="27" mods="0" />
+        </keys>
+      </register>
+      <register name="2" type="4">
+        <text>u</text>
+      </register>
+      <register name="3" type="4">
+        <text>r</text>
+      </register>
+      <register name="4" type="4">
+        <text>l</text>
+      </register>
+      <register name="5" type="4">
+        <text>)</text>
+      </register>
+      <register name="6" type="4">
+        <text>;</text>
+      </register>
+      <register name="7" type="4">
+        <text encoding="base64">IEdsaWRlLndpdGgoY29udGV4dCkubG9hZChpbWd1cmwpLmRpc2tDYWNoZVN0cmF0ZWd5KERpc2tDYWNoZVN0cmF0ZWd5LlNPVVJDRSkuaW50byhpbWFnZVZpZXcpOw==</text>
+      </register>
+      <register name="w" type="4">
+        <text />
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">Ly8gICAgICAgIGltYWdlVmlldy5zZXRPblRvdWNoKCk7Cg==</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">Ly8gICAgICAgIEdpZkxvYWRlci5nZXRJbnN0YW5jZSgpLmRpc1BsYXkoZ2V0Q29udGV4dCgpLCBpbWFnZVZpZXcsIHVybCk7Cg==</text>
+      </register>
+      <register name=":" type="4">
+        <text encoding="base64">JzwsJz4gcy9GaWxlL2J5dGVbXS9n</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>byte[]</last-search>
+      <last-offset />
+      <last-pattern>File</last-pattern>
+      <last-replace>byte[]</last-replace>
+      <last-substitute>File</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry encoding="base64">XDxQaW5jaEltYWdlVmlld1w+</entry>
+        <entry>initView</entry>
+        <entry encoding="base64">XDxtTWFza1w+</entry>
+        <entry>Future</entry>
+        <entry>id</entry>
+        <entry>onTouchEvent</entry>
+        <entry>Max</entry>
+        <entry>int</entry>
+        <entry encoding="base64">XDxnZXREYXRhXD4=</entry>
+        <entry encoding="base64">XDxtb3JlUGFyYUNvbHVtbkZpcnN0XD4=</entry>
+        <entry encoding="base64">XDxweE1vcmVXYW5kSFw+</entry>
+        <entry encoding="base64">XDxyb3dQYXJhXD4=</entry>
+        <entry>setImageResource</entry>
+        <entry>get</entry>
+        <entry>T</entry>
+        <entry encoding="base64">PGJ5dGVbXT4=</entry>
+        <entry encoding="base64">PFQ+</entry>
+        <entry>byte[]/Bitmap/g</entry>
+        <entry>byte[]</entry>
+        <entry>File</entry>
+      </history-search>
+      <history-cmd>
+        <entry>@q</entry>
+        <entry>n3w</entry>
+        <entry encoding="base64">JzwsJz5zL2FuZHJvaWQ6dGV4dFN0eWxlPSJib2xkIi8=</entry>
+        <entry>set rnu</entry>
+        <entry encoding="base64">JzwsJz5zL2luZGljYXRvcnMvbUluZGljYXRvckltYWdlVmlld3M=</entry>
+        <entry encoding="base64">JzwsJz5zL19pZC9fYW1vdW50L2M=</entry>
+        <entry encoding="base64">JzwsJz5zL19pZC9fZGF0ZXRpbWU=</entry>
+        <entry>wq</entry>
+        <entry>q</entry>
+        <entry encoding="base64">JzwsJz5ub3JtYWwgLg==</entry>
+        <entry>normal .</entry>
+        <entry encoding="base64">JzwsJz4gcy9pZC9jcmVhdGVfdGltZQ==</entry>
+        <entry encoding="base64">JzwsJz4gcy9NYXgvTWluL2c=</entry>
+        <entry encoding="base64">JzwsJz4gcy9pbnQvZmxvYXQvZw==</entry>
+        <entry encoding="base64">JzwsJz4gcy9UL2J5dGVbXS9n</entry>
+        <entry encoding="base64">JzwsJz4gcy9UL2J5dGVbXS9nYw==</entry>
+        <entry encoding="base64">JzwsJz4gcy88VD4vL2c=</entry>
+        <entry encoding="base64">JzwsJz4gcy9ieXRlW10vQml0bWFwL2c=</entry>
+        <entry>tabnext</entry>
+        <entry encoding="base64">JzwsJz4gcy9GaWxlL2J5dGVbXS9n</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed Q</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed U</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed CLOSE_BRACKET</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed I</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed O</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed OPEN_BRACKET</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed P</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed X</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed A</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed 2</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed D</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed W</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed H</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed M</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed R</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
