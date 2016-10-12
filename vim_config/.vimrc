@@ -28,6 +28,7 @@ Plugin 'trusktr/seti.vim'
 
 Plugin 'tyrannicaltoucan/vim-deep-space'
 
+Plugin 'kien/ctrlp.vim'
 
 " ------------------------------------------------------------------
 " vim snipmate
@@ -154,3 +155,9 @@ set backspace=indent,eol,start
 " set tags
 " ------------------------------------------------------------------
 set tags=tags;
+
+
+" ------------------------------------------------------------------
+" set CtrlP
+" ------------------------------------------------------------------
+let g:ctrlp_working_path_mode = 'ra'
