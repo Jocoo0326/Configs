@@ -42,20 +42,14 @@ Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'Raimondi/delimitMate'
 
-" ------------------------------------------------------------------
-" vim snipmate
-" ------------------------------------------------------------------
-Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'tomtom/tlib_vim'
+Plugin 'SirVer/ultisnips'
 
-Plugin 'garbas/vim-snipmate'
-
-" Optional:
 Plugin 'honza/vim-snippets'
-" ------------------------------------------------------------------
 
 call vundle#end()
+" ------------------------------------------------------------------
 
 filetype plugin indent on
 
