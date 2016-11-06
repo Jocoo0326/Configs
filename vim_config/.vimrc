@@ -30,6 +30,18 @@ Plugin 'tyrannicaltoucan/vim-deep-space'
 
 Plugin 'kien/ctrlp.vim'
 
+Plugin 'scrooloose/nerdcommenter'
+
+Plugin 'tpope/vim-surround'
+
+Plugin 'tpope/vim-repeat'
+
+Plugin 'majutsushi/tagbar'
+
+Plugin 'kien/rainbow_parentheses.vim'
+
+Plugin 'Raimondi/delimitMate'
+
 " ------------------------------------------------------------------
 " vim snipmate
 " ------------------------------------------------------------------
@@ -161,3 +173,51 @@ set tags=tags;
 " set CtrlP
 " ------------------------------------------------------------------
 let g:ctrlp_working_path_mode = 'ra'
+
+
+" ------------------------------------------------------------------
+" set nerdCommenter
+" ------------------------------------------------------------------
+let g:NERDSpaceDelims=1
+map <C-_> <leader>c<Space>
+
+
+" ------------------------------------------------------------------
+" set tagbar
+" ------------------------------------------------------------------
+let g:tagbar_autofocus = 1
+nmap <F8> :TagbarToggle<CR>
+
+
+" ------------------------------------------------------------------
+" set rainbow_parenttheses
+" ------------------------------------------------------------------
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+
+" ------------------------------------------------------------------
+" set delimitMate
+" ------------------------------------------------------------------
+au FileType python let b:delimitMate_nesting_quotes = ['"']
