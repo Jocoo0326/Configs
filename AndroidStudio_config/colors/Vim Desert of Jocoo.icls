@@ -1,8 +1,9 @@
 <scheme name="Vim Desert of Jocoo" version="142" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.2" />
-  <option name="EDITOR_FONT_SIZE" value="18" />
+  <option name="EDITOR_FONT_SIZE" value="26" />
   <option name="CONSOLE_FONT_NAME" value="Source Code Pro" />
-  <option name="EDITOR_FONT_NAME" value="YaHei Consolas Hybrid" />
+  <option name="CONSOLE_FONT_SIZE" value="18" />
+  <option name="EDITOR_FONT_NAME" value="Consolas" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
     <option name="CARET_COLOR" value="bbbbbb" />
@@ -547,6 +548,32 @@
     <option name="JAVA_SEMICOLON">
       <value>
         <option name="FOREGROUND" value="d3d3d3" />
+      </value>
+    </option>
+    <option name="LOGCAT_DEBUG_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="4524ff" />
+        <option name="BACKGROUND" value="262626" />
+      </value>
+    </option>
+    <option name="LOGCAT_INFO_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+        <option name="BACKGROUND" value="262626" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="LOGCAT_VERBOSE_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="9178ff" />
+        <option name="BACKGROUND" value="262626" />
+      </value>
+    </option>
+    <option name="LOGCAT_WARNING_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="c6c249" />
+        <option name="FONT_TYPE" value="2" />
+        <option name="EFFECT_TYPE" value="3" />
       </value>
     </option>
     <option name="LOG_ERROR_OUTPUT">
