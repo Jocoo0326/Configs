@@ -215,3 +215,8 @@ au Syntax * RainbowParenthesesLoadBraces
 " set delimitMate
 " ------------------------------------------------------------------
 au FileType python let b:delimitMate_nesting_quotes = ['"']
+
+" ------------------------------------------------------------------
+" set ejs as html
+" ------------------------------------------------------------------
+au BufNewFile,BufRead *.ejs set filetype=html
