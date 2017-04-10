@@ -12,7 +12,7 @@ elseif has('win32') || has('win64')
   call vundle#begin('$HOME/vimfiles/bundle/')
 endif
 
-Plugin 'Jocoo2015/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 
