@@ -1,6 +1,6 @@
 <scheme name="Vim Desert of Jocoo" version="142" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.2" />
-  <option name="EDITOR_FONT_SIZE" value="26" />
+  <option name="EDITOR_FONT_SIZE" value="20" />
   <option name="CONSOLE_FONT_NAME" value="Consolas" />
   <option name="CONSOLE_FONT_SIZE" value="18" />
   <option name="EDITOR_FONT_NAME" value="Consolas" />
@@ -26,7 +26,6 @@
     <option name="FILESTATUS_modifiedOutside" value="6897bb" />
     <option name="GUTTER_BACKGROUND" value="1e1e1e" />
     <option name="INDENT_GUIDE" value="222222" />
-    <option name="LINE_NUMBERS_COLOR" value="d3d3d3" />
     <option name="METHOD_SEPARATORS_COLOR" value="3c3c3c" />
     <option name="MODIFIED_LINES_COLOR" value="415f69" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="574300" />
@@ -41,12 +40,12 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="82f985" />
+        <option name="FOREGROUND" value="69f0ae" />
       </value>
     </option>
     <option name="ABSTRACT_METHOD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dcd68f" />
+        <option name="FOREGROUND" value="1e88e5" />
       </value>
     </option>
     <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
@@ -61,7 +60,7 @@
     </option>
     <option name="ANONYMOUS_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="82f985" />
+        <option name="FOREGROUND" value="69f0ae" />
       </value>
     </option>
     <option name="BAD_CHARACTER">
@@ -81,7 +80,7 @@
     </option>
     <option name="CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="82f985" />
+        <option name="FOREGROUND" value="69f0ae" />
       </value>
     </option>
     <option name="CONSOLE_BLUE_OUTPUT">
@@ -125,9 +124,14 @@
         <option name="FOREGROUND" value="67c3e7" />
       </value>
     </option>
+    <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="1e88e5" />
+      </value>
+    </option>
     <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dcd68f" />
+        <option name="FOREGROUND" value="1e88e5" />
       </value>
     </option>
     <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
@@ -407,7 +411,7 @@
     </option>
     <option name="ENUM_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="82f985" />
+        <option name="FOREGROUND" value="69f0ae" />
       </value>
     </option>
     <option name="ERRORS_ATTRIBUTES">
@@ -475,7 +479,7 @@
     </option>
     <option name="INHERITED_METHOD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dcd68f" />
+        <option name="FOREGROUND" value="1e88e5" />
       </value>
     </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
@@ -485,17 +489,22 @@
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dddddd" />
+        <option name="FOREGROUND" value="cb7777" />
+      </value>
+    </option>
+    <option name="INSTANCE_FINAL_FIELD_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="ffab40" />
       </value>
     </option>
     <option name="INTERFACE_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="82f985" />
+        <option name="FOREGROUND" value="69f0ae" />
       </value>
     </option>
     <option name="JAVA_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="558b3a" />
+        <option name="FOREGROUND" value="aed581" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -516,7 +525,7 @@
     </option>
     <option name="JAVA_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="558b3a" />
+        <option name="FOREGROUND" value="9688" />
       </value>
     </option>
     <option name="JAVA_DOT">
@@ -526,13 +535,17 @@
     </option>
     <option name="JAVA_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="8083eb" />
-        <option name="BACKGROUND" value="1e1e1e" />
+        <option name="FOREGROUND" value="d57294" />
       </value>
     </option>
     <option name="JAVA_LINE_COMMENT">
       <value>
         <option name="FOREGROUND" value="558b3a" />
+      </value>
+    </option>
+    <option name="JAVA_NUMBER">
+      <value>
+        <option name="FOREGROUND" value="ffab40" />
       </value>
     </option>
     <option name="JAVA_OPERATION_SIGN">
@@ -598,12 +611,12 @@
     </option>
     <option name="METHOD_CALL_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dcd68f" />
+        <option name="FOREGROUND" value="1e88e5" />
       </value>
     </option>
     <option name="METHOD_DECLARATION_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dcd68f" />
+        <option name="FOREGROUND" value="1e88e5" />
       </value>
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
@@ -626,12 +639,17 @@
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dddddd" />
+        <option name="FOREGROUND" value="bb6969" />
+      </value>
+    </option>
+    <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="ffab40" />
       </value>
     </option>
     <option name="STATIC_METHOD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="997dc4" />
+        <option name="FOREGROUND" value="1e88e5" />
       </value>
     </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
