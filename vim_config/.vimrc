@@ -18,11 +18,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'powerline/powerline'
-
 Plugin 'mattn/emmet-vim'
-
-Plugin 'Lokaltog/vim-powerline'
 
 Plugin 'trusktr/seti.vim'
 
@@ -47,6 +43,12 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'SirVer/ultisnips'
 
 Plugin 'honza/vim-snippets'
+
+Plugin 'aquach/vim-http-client'
+
+Plugin 'vim-airline/vim-airline'
+
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 " ------------------------------------------------------------------
@@ -75,10 +77,17 @@ else
   set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 endif
 
+
 " ------------------------------------------------------------------
 " set colorscheme
 " ------------------------------------------------------------------
-colorscheme seti
+colorscheme solarized
+
+
+" ------------------------------------------------------------------
+" set airline theme
+" ------------------------------------------------------------------
+let g:airline_theme='tomorrow'
 
 
 " ------------------------------------------------------------------
@@ -116,6 +125,8 @@ no <up> ddkP
 nmap <Tab> :tabnext<CR>
 nmap <c-d> yyp  " copy current line
 map <C-F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+nnoremap <C-v> i<C-r>*<Esc>0
+inoremap <C-v> <C-r>*
 
 
 " ------------------------------------------------------------------
