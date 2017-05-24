@@ -6,14 +6,14 @@ VundleDestDirInWindows=~/vimfiles
 OS=$(uname -a)
 
 echo '========>Clone VundleVim repository'
-if [[ $OS == Linux* ]]; then
-  rm -rf $VundleDestDirInLinux
-  git clone $VundleVimRepository $VundleDestDirInLinux/bundle/Vundle.vim
-  vimrc=.vimrc
-else
+if [[ $OS == MS* ]]; then
   rm -rf $VundleDestDirInWindows
   git clone $VundleVimRepository $VundleDestDirInWindows/bundle/Vundle.vim
   vimrc=_vimrc
+else
+  rm -rf $VundleDestDirInLinux
+  git clone $VundleVimRepository $VundleDestDirInLinux/bundle/Vundle.vim
+  vimrc=.vimrc
 fi
 echo '========================================'
 echo ''
