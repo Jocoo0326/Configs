@@ -50,6 +50,8 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'http://git.coding.net/xzpnuist/vim-translate-plugin.git'
+
 call vundle#end()
 " ------------------------------------------------------------------
 
@@ -127,6 +129,7 @@ nmap <c-d> yyp  " copy current line
 map <C-F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 nnoremap <C-v> i<C-r>*<Esc>0
 inoremap <C-v> <C-r>*
+nnoremap <leader>vimrc :tabedit $MYVIMRC<CR>
 
 
 " ------------------------------------------------------------------
