@@ -20,6 +20,8 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'mattn/emmet-vim'
 
+Plugin 'w0ng/vim-hybrid'
+
 Plugin 'trusktr/seti.vim'
 
 Plugin 'tyrannicaltoucan/vim-deep-space'
@@ -83,7 +85,8 @@ endif
 " ------------------------------------------------------------------
 " set colorscheme
 " ------------------------------------------------------------------
-colorscheme solarized
+colorscheme hybrid
+set bg=dark
 
 
 " ------------------------------------------------------------------
@@ -99,7 +102,7 @@ if has('win32') || has('win64')
   set guifont=Consolas:h12
 elseif has('unix')
   if has("gui_macvim")
-    set guifont=Monaco:h22
+    set guifont=Monaco:h20
   else
     set guifont=Courier\ 16
   endif
@@ -125,8 +128,10 @@ set colorcolumn=+1
 no <down> ddp
 no <up> ddkP
 nmap <Tab> :tabnext<CR>
-nmap <c-d> yyp  " copy current line
-map <C-F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+nmap <C-d> yyp  " copy current line
+nnoremap <leader>ctags :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+nnoremap <C-c> "*yiw
+vnoremap <C-c> "*y
 nnoremap <C-v> i<C-r>*<Esc>0
 inoremap <C-v> <C-r>*
 nnoremap <leader>vimrc :tabedit $MYVIMRC<CR>
