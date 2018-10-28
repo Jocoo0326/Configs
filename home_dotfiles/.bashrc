@@ -4,9 +4,10 @@ alias la='ls -A'
 alias ll='ls -al'
 alias shut='shutdown -h now'
 
-reload_xresouce() {
-	xrdb ~/.Xresource
+reload_xdefaults() {
+	xrdb ~/.Xdefaults
 }
+reload_xdefaults
 
 git_branch() {
 	git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
