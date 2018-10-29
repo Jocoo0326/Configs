@@ -9,15 +9,15 @@
 general {
         output_format = "i3bar"
         colors = true
-        interval = 1
+        interval = 60
 }
 
 # order += "ipv6"
-order += "disk /"
+# order += "disk /"
 # order += "wireless _first_"
-order += "ethernet _first_"
-order += "battery all"
-order += "load"
+# order += "ethernet _first_"
+# order += "battery all"
+# order += "load"
 order += "tztime local"
 
 wireless _first_ {
@@ -36,7 +36,7 @@ battery all {
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%H:%M %Y/%m/%d"
 }
 
 load {
