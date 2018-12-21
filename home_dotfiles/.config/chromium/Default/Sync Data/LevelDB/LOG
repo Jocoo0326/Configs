@@ -1,1 +1,3 @@
-2018/10/26-11:38:31.281 1127 Reusing MANIFEST /root/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2018/12/14-13:40:39.934 7363 Reusing MANIFEST /home/jocoo/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2018/12/14-13:40:39.935 7363 Recovering log #3
+2018/12/14-13:40:39.935 7363 Reusing old log /home/jocoo/.config/chromium/Default/Sync Data/LevelDB/000003.log 
