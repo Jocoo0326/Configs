@@ -54,6 +54,10 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'http://git.coding.net/xzpnuist/vim-translate-plugin.git'
 
+Plugin 'godlygeek/tabular'
+
+Plugin 'morhetz/gruvbox'
+
 call vundle#end()
 " ------------------------------------------------------------------
 
@@ -71,11 +75,9 @@ syntax on
 " setup terminal for solarized colorscheme
 " ------------------------------------------------------------------
 if has('gui_running')
-  set background=light
   set t_Co=256
 else
   set t_Co=16
-  set background=light
   let g:solarized_termcolors=16
   " powerline config
   set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
@@ -85,14 +87,14 @@ endif
 " ------------------------------------------------------------------
 " set colorscheme
 " ------------------------------------------------------------------
-colorscheme hybrid
+colorscheme gruvbox
 set bg=dark
 
 
 " ------------------------------------------------------------------
 " set airline theme
 " ------------------------------------------------------------------
-let g:airline_theme='tomorrow'
+let g:airline_theme='gruvbox'
 
 
 " ------------------------------------------------------------------
@@ -104,7 +106,7 @@ elseif has('unix')
   if has("gui_macvim")
     set guifont=Monaco:h20
   else
-    set guifont=Courier\ 16
+    set guifont=FiraCode\ 16
   endif
 else
 endif

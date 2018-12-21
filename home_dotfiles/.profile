@@ -1,6 +1,7 @@
+echo "in .profile"
 
 if [ "$(tty)" = "/dev/tty1" ]; then
-	pgrep -x i3 || xinit $(which i3)
+	pgrep -x i3 || startx
 fi
 
 if [ -f ~/.bashrc ]; then
