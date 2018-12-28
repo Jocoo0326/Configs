@@ -82,6 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -95,5 +96,26 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias stconfig="$EDITOR ~/st/config.h"
+alias i3config="$EDITOR ~/.config/i3/config"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
+alias shut='shutdown -h now'
+
+# utils
+mem() {
+  free -h | awk '/^Mem:/ {print $3 "/" $2}'
+}
+
+export ANDROID_HOME=~/Android/Sdk
+export ADB_HOME=$ANDROID_HOME/platform-tools
+export PATH=$ADB_HOME:$ANDROID_HOME:$PATH
+
+vbox_config() {
+  VBoxClient --clipboard
+}
+vbox_config
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+	pgrep -x i3 || startx
+fi
