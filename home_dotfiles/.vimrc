@@ -89,7 +89,6 @@ syntax on
 " setup terminal for solarized colorscheme
 " ------------------------------------------------------------------
 if has('gui_running')
-  set background=light
   set t_Co=256
 else
   set t_Co=16

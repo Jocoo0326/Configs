@@ -29,10 +29,14 @@ echo '========================================'
 echo ''
 
 echo '========>Link vimrc file'
-if [ -f ~/$vimrc ]; then
-  mv ~/$vimrc ~/${vimrc}_backup
+if [[ $OS == M* ]]; then
+  cp $(dirname $0)/.vimrc ~/$vimrc
+else
+  if [ -f ~/$vimrc ]; then
+    mv ~/$vimrc ~/${vimrc}_backup
+    ln -sf $(dirname $0)/$vimrc ~/$vimrc
+  fi
 fi
-ln -s $(dirname $0)/.vimrc ~/$vimrc
 echo '========================================'
 echo ''
 
@@ -40,7 +44,7 @@ if [[ $OS == M* ]]; then
   echo 'Enter vim and run command :PluginInstall'
 else
   echo 'Run :PluginInstall from terminal'
-  vim  +PluginInstall +qall
+  vim +PluginInstall +qall
 fi
 
 echo 'Done!'
