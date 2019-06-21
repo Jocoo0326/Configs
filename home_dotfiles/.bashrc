@@ -22,8 +22,3 @@ vbox_config() {
   VBoxClient --clipboard
 }
 vbox_config
-
-# utils
-mem() {
-  free -h | awk '/^Mem:/ {print $3 "/" $2}'
-}
