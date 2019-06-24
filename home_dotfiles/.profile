@@ -1,7 +1,7 @@
 echo "in .profile"
 
 if [ "$(tty)" = "/dev/tty1" ]; then
-	pgrep -x i3 || startx
+	pgrep -x dwm || startx
 fi
 
 if [ -f ~/.bashrc ]; then
