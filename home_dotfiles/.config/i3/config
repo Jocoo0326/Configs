@@ -5,11 +5,8 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-# i3 config file (v4)
-#
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
-set $mod Mod1
+# i3 config file (v4) # # Please see https://i3wm.org/docs/userguide.html for a complete reference!  
+set $mod Mod4
 
 set $editor st
 
@@ -46,10 +43,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+# bindsym $mod+h focus left
+# bindsym $mod+j focus down
+# bindsym $mod+k focus up
+# bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -70,10 +67,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-# bindsym $mod+h split h
+bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+shift+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+Shift+f fullscreen toggle
@@ -205,3 +202,6 @@ for_window [class="Emacs"] move to workspace $ws4
 # android studio
 bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
 for_window [class="jetbrains-studio"] move to workspace $ws5
+
+# lock screen
+bindsym $mod+Ctrl+l exec dm-tool switch-to-greeter
