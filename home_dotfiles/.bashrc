@@ -11,9 +11,11 @@ alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias shut='shutdown -h now'
 alias ed='emacs --daemon'
 alias e='emacsclient -c'
+alias p='sudo pacman'
+alias ss='sudo systemctl'
 
 git_branch() {
-	git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
+  git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
 }
 
 if [[ $SHELL = "bash" ]]; then
@@ -22,7 +24,7 @@ fi
 
 export ANDROID_HOME=~/Android/Sdk
 export ADB_HOME=$ANDROID_HOME/platform-tools
-export PATH=$ADB_HOME:$ANDROID_HOME:$PATH
+export PATH=$ADB_HOME:$ANDROID_HOME:$PATH:~/.scripts
 
 vbox_config() {
   VBoxClient --clipboard
