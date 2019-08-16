@@ -58,11 +58,13 @@ Plugin 'godlygeek/tabular'
 
 Plugin 'morhetz/gruvbox'
 
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
 
 Plugin 'tpope/vim-unimpaired'
 
 Plugin 'tommcdo/vim-exchange'
+
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 " ------------------------------------------------------------------
@@ -118,15 +120,11 @@ let g:airline_theme='gruvbox'
 if has('win32') || has('win64')
   " set guifont=Consolas:h12
   " set guifont=YaHei\ Consolas\ Hybrid:h13
-  set guifont=Fira\ Code:h12,YaHei\ Consolas\ Hybrid:h12
   " set guifont=Source\ Code\ Pro:h13
-elseif has('unix')
-  if has("gui_macvim")
-    set guifont=Monaco:h20
-  else
-    set guifont=FiraCode\ 16
-  endif
+  set guifont=Fira\ Code:h12,YaHei\ Consolas\ Hybrid:h12
 else
+  " set guifont=Monaco:h20
+  set guifont=FiraCode\ 13
 endif
 set encoding=utf8
 
@@ -265,11 +263,11 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " ------------------------------------------------------------------
 " set ale formatter
 " ------------------------------------------------------------------
-let b:ale_fixers = ['prettier', 'eslint']
-let g:ale_fixers = {
-      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \   'javascript': ['eslint'],
-      \}
-let g:ale_fix_on_save = 1
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
+" let b:ale_fixers = ['prettier', 'eslint']
+" let g:ale_fixers = {
+      " \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+      " \   'javascript': ['eslint'],
+      " \}
+" let g:ale_fix_on_save = 1
+" let g:ale_completion_enabled = 1
+" set omnifunc=ale#completion#OmniFunc

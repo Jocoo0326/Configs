@@ -16,8 +16,8 @@ set $editor st
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-# font pango:DejaVu Sans Mono 8
-font pango:Fira Code 8
+font pango:DejaVu Sans Mono 8
+# font pango:Fira Code 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -43,10 +43,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-# bindsym $mod+h focus left
-# bindsym $mod+j focus down
-# bindsym $mod+k focus up
-# bindsym $mod+l focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -67,7 +67,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+# bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+shift+v split v
@@ -92,16 +92,24 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Fn keys
+# bindsym XF86AudioRaiseVolume exec "amixer sset Master 5%+"
+# bindsym XF86AudioLowerVolume exec "amixer sset Master 5%-"
+# bindsym XF86AudioMute exec "amixer -q sset Master toggle"
+# bindsym XF86AudioMic exec "amixer -q sset Mic toggle"
+# bindsym XF86MonBrightnessDown exec "light -U 5"
+# bindsym XF86MonBrightnessUp exec "light -A 5"
+
 # switch to workspace
 set $ws1 "1:Term"
 set $ws2 "2:Browser"
 set $ws3 "3:Gvim"
 set $ws4 "4:Emacs"
 set $ws5 "5:Studio"
-set $ws6 "6"
+set $ws6 "6:Music"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9:Vbox"
 set $ws10 "10"
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -141,16 +149,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -163,22 +171,22 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-        position bottom
+        position top
 }
 
 #---------------------------------------------------------------
 # desktop appearence
 #---------------------------------------------------------------
 
-for_window [class="^.*"] border pixel 2
-gaps inner 6
-gaps outer 6
+for_window [class="^.*"] border pixel 1
+workspace $ws1 gaps inner 6
+workspace $ws1 gaps outer 6
 
 # desktop background
-exec_always feh --bg-scale ~/.config/wall.jpg
+exec_always feh --bg-scale ~/Configs/home_dotfiles/.config/wall.jpg
 
 # window compositor
-exec compton
+exec compton -b
 
 # screen resolution
 exec xrandr --output VGA-1 --mode 1366x768
@@ -192,7 +200,7 @@ bindsym $mod+shift+g exec gvim
 for_window [class="Gvim"] move to workspace $ws3
 
 # launch chromium to workspace 2
-bindsym $mod+shift+b exec google-chrome-stable --proxy-server="192.168.203.44:1080"
+bindsym $mod+shift+b exec google-chrome-stable
 for_window [class="Google-chrome"] move to workspace $ws2
 
 # emacs
@@ -203,5 +211,11 @@ for_window [class="Emacs"] move to workspace $ws4
 bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
 for_window [class="jetbrains-studio"] move to workspace $ws5
 
+# virtualbox
+for_window [class="VirtualBox Machine"] move to workspace $ws9
+
 # lock screen
-bindsym $mod+Ctrl+l exec dm-tool switch-to-greeter
+bindsym $mod+Ctrl+l exec i3lock -i ~/Configs/home_dotfiles/.config/lock.png
+
+# switch workspace
+bindsym Mod1+Tab workspace back_and_forth

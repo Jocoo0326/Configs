@@ -1,0 +1,9 @@
+#!/bin/sh
+
+default_bg=~/Configs/home_dotfiles/.config/wall.jpg
+bg=$default_bg
+if [[ ! -z "$1" ]]; then
+  bg=$1
+  ln -sf $bg $default_bg
+fi
+feh --bg-scale $bg

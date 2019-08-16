@@ -1,0 +1,13 @@
+#!/bin/sh
+
+function status() {
+  interface=$(ip route get 114.114.114.114 2>/dev/null | awk '{print $5}')
+  echo $interface
+  date "+%a %m-%d %T%:::z"
+}
+
+while true
+do
+  xsetroot -name "$(status | tr '\n' ' ')"
+  sleep 1
+done

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+env _JAVA_AWT_WM_NONREPARENTING=1 /opt/android-studio/bin/studio.sh
