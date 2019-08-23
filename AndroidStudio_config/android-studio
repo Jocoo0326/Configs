@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -z "$IDEA_JDK" ] ; then
+  IDEA_JDK="/usr/lib/jvm/jdk11-openjdk"
+fi
+
+exec env IDEA_JDK="$IDEA_JDK" /opt/android-studio/bin/studio.sh "$@"
