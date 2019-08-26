@@ -2,8 +2,12 @@
 
 hash pactl || (echo 'install pulseaudio-ctl' && exit)
 
+getDefaultSink() {
+  pacmd list-sinks | awk '/\* index/ {printf $3}'
+}
+
 case $1 in
-  +) pactl set-sink-volume $(pactl list | grep Card | cut -d"#" -f2 | tail -1) +10%;;
-  -) pactl set-sink-volume $(pactl list | grep Card | cut -d"#" -f2 | tail -1) -10%;;
-  m) pactl set-sink-mute $(pactl list | grep Card | cut -d"#" -f2 | tail -1) toggle;;
+  +) pactl set-sink-volume $(getDefaultSink) +10%;;
+  -) pactl set-sink-volume $(getDefaultSink) -10%;;
+  m) pactl set-sink-mute $(getDefaultSink) toggle;;
 esac
