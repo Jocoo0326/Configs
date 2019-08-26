@@ -1,0 +1,9 @@
+#!/bin/sh
+
+hash pactl || (echo 'install pulseaudio-ctl' && exit)
+
+case $1 in
+  +) pactl set-sink-volume $(pactl list | grep Card | cut -d"#" -f2 | tail -1) +10%;;
+  -) pactl set-sink-volume $(pactl list | grep Card | cut -d"#" -f2 | tail -1) -10%;;
+  m) pactl set-sink-mute $(pactl list | grep Card | cut -d"#" -f2 | tail -1) toggle;;
+esac

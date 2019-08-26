@@ -40,7 +40,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # change focus
 bindsym $mod+h focus left
@@ -49,10 +49,10 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
+bindsym $mod+Left workspace prev
+bindsym $mod+Right workspace next
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -91,14 +91,6 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-
-# Fn keys
-# bindsym XF86AudioRaiseVolume exec "amixer sset Master 5%+"
-# bindsym XF86AudioLowerVolume exec "amixer sset Master 5%-"
-# bindsym XF86AudioMute exec "amixer -q sset Master toggle"
-# bindsym XF86AudioMic exec "amixer -q sset Mic toggle"
-# bindsym XF86MonBrightnessDown exec "light -U 5"
-# bindsym XF86MonBrightnessUp exec "light -A 5"
 
 # switch to workspace
 set $ws1 "1:Term"
@@ -169,13 +161,36 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+set $bg-color 	         #343838
+set $inactive-bg-color   #343838
+set $text-color          #ffffff
+set $inactive-text-color #dcdcdc
+set $urgent-bg-color     #600473
+set $focused-color       #005995
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $focused-color      $focused-color     $text-color          #00ff00
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-        # status_command i3status
-        # position top
-# }
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+bar {
+        status_command i3status
+        position top
+}
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Pulse Audio controls
+bindsym $mod+Mod1+k exec ~/Configs/home_dotfiles/.scripts/volume +
+bindsym $mod+Mod1+j exec ~/Configs/home_dotfiles/.scripts/volume -
+bindsym $mod+Mod1+m exec ~/Configs/home_dotfiles/.scripts/volume m
+
+# Sreen brightness controls
+bindsym $mod+Mod1+l exec xbacklight -inc 20 # increase screen brightness
+bindsym $mod+Mod1+h exec xbacklight -dec 20 # decrease screen brightness
 
 #---------------------------------------------------------------
 # desktop appearence
