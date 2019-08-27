@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 
 Plugin 'mattn/emmet-vim'
 
@@ -167,8 +167,8 @@ autocmd BufNewFile,BufRead *.java nnoremap <buffer> <F9> :exec '!javac % && java
 " ------------------------------------------------------------------
 " NERDTree config
 " ------------------------------------------------------------------
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" map <C-S-n> :NERDTreeToggle<CR>
+" autocmd bufenter * lf (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 " ------------------------------------------------------------------
@@ -271,3 +271,19 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " let g:ale_fix_on_save = 1
 " let g:ale_completion_enabled = 1
 " set omnifunc=ale#completion#OmniFunc
+"
+
+" ------------------------------------------------------------------
+" set multiple cursors mapping
+" ------------------------------------------------------------------
+let g:multi_cursor_use_default_mapping=1
+" Default mapping
+" let g:multi_cursor_start_word_key      = '<C-n>'
+" let g:multi_cursor_select_all_word_key = '<A-n>'
+" let g:multi_cursor_start_key           = 'g<C-n>'
+" let g:multi_cursor_select_all_key      = 'g<A-n>'
+" let g:multi_cursor_next_key            = '<C-n>'
+" let g:multi_cursor_prev_key            = '<C-p>'
+" let g:multi_cursor_skip_key            = '<C-x>'
+" let g:multi_cursor_quit_key            = '<Esc>'
+

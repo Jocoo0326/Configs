@@ -1,11 +1,11 @@
 #!/bin/sh
 
-bat=BAT0
-bat=${1:-$bat}
+ADP=$(ls /sys/class/power_supply | head -1)
+BAT=$(ls /sys/class/power_supply | tail -1)
 
-capacity=$(cat /sys/class/power_supply/$bat/capacity)
-status=$(cat /sys/class/power_supply/$bat/status)
-aconline=$(cat /sys/class/power_supply/AC/online)
+capacity=$(cat /sys/class/power_supply/$BAT/capacity)
+status=$(cat /sys/class/power_supply/$BAT/status)
+aconline=$(cat /sys/class/power_supply/$ADP/online)
 
 
 capicon() {
