@@ -1,3 +1,5 @@
+export TERMINAL=st
+
 if [ "$(tty)" = "/dev/tty1" ]; then
 	pgrep -x i3 || startx
 fi

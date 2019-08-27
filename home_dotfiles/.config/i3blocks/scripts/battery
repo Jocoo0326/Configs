@@ -1,0 +1,41 @@
+#!/bin/sh
+
+bat=BAT0
+bat=${1:-$bat}
+
+capacity=$(cat /sys/class/power_supply/$bat/capacity)
+status=$(cat /sys/class/power_supply/$bat/status)
+aconline=$(cat /sys/class/power_supply/AC/online)
+
+
+capicon() {
+  if [ $1 -le 10 ]; then
+    printf ""
+  elif [ $1 -le 25 ]; then
+    printf ""
+  elif [ $1 -le 50 ]; then
+    printf ""
+  elif [ $1 -le 100 ]; then
+    printf " "
+  elif [ $1 -eq 100 ]; then
+    printf ""
+  fi
+}
+
+des() {
+  capicon $1
+  if [ $2 -eq 1 ]; then
+    printf "$1 \n"
+  else
+    printf "$1\n"
+  fi
+}
+
+des $capacity $aconline
+des $capacity $aconline
+
+if [[ $capacity -le 20 && $aconline -eq 0 ]]; then
+  echo "#FF0000"
+else
+  echo "#3b9a9c"
+fi

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+case $BLOCK_BUTTON in
+  1) pulsemixer --toggle-mute ;; # left click, mute/unmute
+  4) pulsemixer --change-volume +5 --unmute ;; # scroll up, increase
+  5) pulsemixer --change-volume -5 --unmute ;; # scroll down, decrease
+esac
+
+[ $(pulsemixer --get-mute) = 1 ] && echo "" && echo "volume" && echo "#e41749" && exit
+
+vol=$(pulsemixer --get-volume | awk '{ print $1 }')
+
+if [[ $vol -gt 70 ]]; then
+  icon=""
+elif [[ $vol -gt 30 ]]; then
+  icon=""
+else
+  icon=""
+fi
+
+echo "$icon $vol"
+echo "$icon $vol"
+echo "#00FFF0"

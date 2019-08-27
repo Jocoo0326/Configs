@@ -1,0 +1,30 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+  1) $TERMINAL -e htop ;;
+esac
+
+ICON=""
+
+free -m | awk -v icon=$ICON '
+/^Mem:/ {
+mem_total=$2
+mem_used=$3
+} END {
+  if (mem_used > 1000) {
+    printf("%s %.1fG\n", icon, mem_used/1024)
+    printf("%s %.1fG\n", icon, mem_used/1024)
+  } else {
+    printf("%s %dM\n", icon, mem_used)
+    printf("%s %dM\n", icon, mem_used)
+  }
+  ratio=mem_used/mem_total
+  if (ratio > 0.85) {
+    printf("#ff585d\n")
+  } else if (ratio > 0.6) {
+    printf("#ffb549\n", ratio)
+  } else {
+    printf("#41b6e6\n")
+  }
+}
+'

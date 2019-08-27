@@ -11,3 +11,5 @@ case $1 in
   -) pactl set-sink-volume $(getDefaultSink) -10%;;
   m) pactl set-sink-mute $(getDefaultSink) toggle;;
 esac
+
+pkill -RTMIN+10 i3blocks 2>/dev/null
