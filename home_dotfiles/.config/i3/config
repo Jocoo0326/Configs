@@ -220,7 +220,7 @@ exec xrandr --output VGA-1 --mode 1366x768
 #---------------------------------------------------------------
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -lines 10 -eh 2 -width 100 -padding 800 -opacity "65" -bw 0 -bc "$bg-color" -bg "#ff0000" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "monospace 18"
+bindsym $mod+d exec rofi -show run -config ~/Configs/home_dotfiles/.config/rofi/config
 
 # gvim
 bindsym $mod+shift+g exec gvim
