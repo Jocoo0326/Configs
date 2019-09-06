@@ -22,6 +22,10 @@ alias inst='adb install'
 alias instr='adb install -r'
 alias sl='ss-local'
 alias shut5='shutdown 5'
+alias gs='git status'
+alias gpl='git pull'
+alias gps='git push'
+alias gc='git commit'
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
