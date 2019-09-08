@@ -1,0 +1,17 @@
+<templateSet group="Kotlin">
+  <template name="cs" value="private const val $name$: String = &quot;$NAME$&quot;" description="const sting" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="underscoresToCamelCase(name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="ps" value="var $name$: String&#10;  get() = pref.getString($NAME$, &quot;$def$&quot;)!!&#10;  set(value) = pref.edit().putString($NAME$, value).apply()" description="preference string" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="capitalizeAndUnderscore(name)" defaultValue="" alwaysStopAt="true" />
+    <variable name="def" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

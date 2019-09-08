@@ -1,0 +1,61 @@
+<templateSet group="AndroidXML">
+  <template name="ca" value="app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;    app:layout_constraintLeft_toLeftOf=&quot;parent&quot;&#10;    app:layout_constraintRight_toRightOf=&quot;parent&quot;&#10;    app:layout_constraintTop_toTopOf=&quot;parent&quot;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="llp" value="app:layout_constraintLeft_toLeftOf=&quot;parent&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="rrp" value="app:layout_constraintRight_toRightOf=&quot;parent&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ttp" value="app:layout_constraintTop_toTopOf=&quot;parent&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="bbp" value="app:layout_constraintBottom_toBottomOf=&quot;parent&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="app:layout_constraintTop_toTopOf=&quot;parent&quot;&#10;app:layout_constraintLeft_toLeftOf=&quot;parent&quot;&#10;app:layout_constraintRight_toRightOf=&quot;parent&quot;&#10;app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sz" value="android:textSize=&quot;@dimen/sp_$size$&quot;" description="textview text size" toReformat="false" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="12" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="android:textColor=&quot;@color/color_$color$&quot;" description="textview text color" toReformat="false" toShortenFQNames="true">
+    <variable name="color" expression="" defaultValue="black" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="id" value="android:id=&quot;@+id/$id$&quot;" description="set id" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="mt" value="android:layout_marginTop=&quot;@dimen/dp_$size$&quot;" description="margin top" toReformat="false" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="10" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sl" value="android:maxLines=&quot;1&quot;&#10;android:ellipsize=&quot;end&quot;" description="single line with ellipsize" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
