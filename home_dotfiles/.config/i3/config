@@ -246,3 +246,6 @@ bindsym $mod+Ctrl+l exec i3lock -i ~/Configs/home_dotfiles/.config/lock.png
 
 # switch workspace
 bindsym Mod1+Tab workspace back_and_forth
+
+# screenshot
+bindsym Ctrl+Mod1+a exec deepin-screenshot
