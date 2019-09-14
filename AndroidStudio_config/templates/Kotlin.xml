@@ -14,4 +14,34 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
+  <template name="contract" value="  interface View : IView {&#10;&#10;  }&#10;&#10;  interface Presenter : IPresenter&lt;View&gt; {&#10;&#10;  }" description="contract" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="act" value="class $name$Activity :&#10;  BaseMVPActivity&lt;$name$Contract.View, $name$Presenter&gt;(),&#10;  $name$Contract.View {&#10;  override fun initData() {&#10;&#10;  }&#10;&#10;  override fun initView() {&#10;&#10;  }&#10;&#10;  override fun layoutId(): Int {&#10;    return R.layout.activity_$layout$&#10;  }&#10;}&#10;" description="mvp activity" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="spacesToUnderscores(snakeCase(name))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="pre" value="class $name$Presenter : BasePresenter&lt;$name$Contract.View&gt;(), $name$Contract.Presenter{&#10;}&#10;" description="mvp presenter" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="ada" value="class $name$sAdapter : BaseSingleAdapter&lt;$name$Info, $name$ItemViewHolder&gt;() {&#10;&#10;  override fun layoutId(): Int {&#10;    return R.layout.layout_$layout$_item&#10;  }&#10;}&#10;&#10;class $name$ItemViewHolder(itemView: View) : BaseViewHolder&lt;$name$Info&gt;(itemView) {&#10;  override fun onBind(item: $name$Info, clickListener: View.OnClickListener?) {&#10;    with(itemView) {&#10;      &#10;    }&#10;  }&#10;}&#10;" description="adapter" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="spacesToUnderscores(snakeCase(name))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="onitemclick" value="{ item, _, _, _-&gt;&#10;&#10;    }" description="onItemClickListener" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
