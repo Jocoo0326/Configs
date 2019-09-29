@@ -26,6 +26,7 @@ alias gs='git status'
 alias gpl='git pull'
 alias gps='git push'
 alias gc='git commit'
+alias in='adb shell input text'
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1

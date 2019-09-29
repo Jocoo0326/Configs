@@ -93,7 +93,7 @@ set $ws3 "3:Gvim"
 set $ws4 "4:Emacs"
 set $ws5 "5:Studio"
 set $ws6 "6:Music"
-set $ws7 "7"
+set $ws7 "7:Blender"
 set $ws8 "8"
 set $ws9 "9:Vbox"
 set $ws10 "10"
@@ -237,6 +237,11 @@ for_window [class="Emacs"] move to workspace $ws4
 # android studio
 bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
 for_window [class="jetbrains-studio"] move to workspace $ws5
+for_window [title="Welcome to Android Studio"] floating enable
+for_window [class="jetbrains-idea"] move to workspace $ws5
+
+# blender
+for_window [class="Blender"] move to workspace $ws7
 
 # virtualbox
 for_window [class="VirtualBox Machine"] move to workspace $ws9
@@ -249,3 +254,8 @@ bindsym Mod1+Tab workspace back_and_forth
 
 # screenshot
 bindsym Ctrl+Mod1+a exec deepin-screenshot
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
