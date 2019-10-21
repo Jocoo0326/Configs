@@ -36,14 +36,12 @@ if [[ $SHELL = "bash" ]]; then
   export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\[\e[36m\]$(git_branch)\[\e[0m\]\n\[\e[35m\]\$\[\e[0m\] '
 fi
 
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_HOME=~/Android/Sdk
 export ADB_HOME=$ANDROID_HOME/platform-tools
 export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME
 export VAGRANT_HOME=/home/jocoo/d/.vagrant.d
-# ibus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
 export _JAVA_AWT_WM_NONREPARENTING=1
 eval "$(dircolors ~/.dircolors)"
 
