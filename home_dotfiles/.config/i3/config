@@ -249,6 +249,9 @@ for_window [class="Blender"] move to workspace $ws7
 # virtualbox
 for_window [class="VirtualBox Machine"] move to workspace $ws9
 
+# vscode
+for_window [class="code-oss"] move to workspace $ws3
+
 # lock screen
 bindsym $mod+Ctrl+l exec i3lock -i ~/Configs/home_dotfiles/.config/lock.png
 
