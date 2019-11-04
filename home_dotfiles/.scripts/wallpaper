@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# single process guard
+pids=(`pgrep wallpaper -d\ `)
+pid=$$
+# echo ${pids[@]}, $pid
+for i in "${pids[@]}"; do
+    if [ $i != $pid ]; then
+      kill -9 $i
+    fi
+done
+
+if [[ -z $1 ]]; then
+  interval=1800
+else
+  interval=$1
+fi
+wallpapers_path=~/Configs/home_dotfiles/.config
+files=(`find $wallpapers_path -maxdepth 1 -type f -name "wall-*"`)
+lastpic=-1
+while true; do
+    randompic=`printf "%s\n" "${files[RANDOM % ${#files[@]}]}"`
+    if [ $lastpic != $randompic ]; then
+      feh --bg-scale $randompic
+      lastpic=$randompic
+      sleep $interval
+    fi
+done

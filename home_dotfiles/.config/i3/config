@@ -207,7 +207,8 @@ workspace $ws1 gaps inner 6
 workspace $ws1 gaps outer 6
 
 # desktop background
-exec_always feh --bg-scale ~/Configs/home_dotfiles/.config/wall.jpg
+# exec_always feh --bg-scale ~/Configs/home_dotfiles/.config/wall.jpg
+exec_always --no-startup-id ~/Configs/home_dotfiles/.scripts/wallpaper
 
 # window compositor
 exec_always --no-startup-id ~/Configs/home_dotfiles/.scripts/compton.sh
