@@ -1,0 +1,8 @@
+#!/bin/bash
+
+case $BLOCK_BUTTON in
+  1) xdg-open "https://www.baidu.com/s?wd=rili" && i3-msg workspace 2:Browser ;;
+esac
+
+
+date '+%Y-%m-%d %H:%M:%S'

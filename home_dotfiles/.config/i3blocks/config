@@ -92,7 +92,7 @@ interval=30
 # Date Time
 #
 [time]
-command=date '+%Y-%m-%d %H:%M:%S'
+# command=date '+%Y-%m-%d %H:%M:%S'
 color=#fef4a9
 interval=5
 

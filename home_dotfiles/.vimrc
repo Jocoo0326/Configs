@@ -40,7 +40,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'Raimondi/delimitMate'
 
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'SirVer/ultisnips'
 
