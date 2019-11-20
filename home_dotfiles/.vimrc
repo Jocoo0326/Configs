@@ -40,7 +40,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'Raimondi/delimitMate'
 
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'SirVer/ultisnips'
 
@@ -65,6 +65,8 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tommcdo/vim-exchange'
 
 Plugin 'terryma/vim-multiple-cursors'
+
+Plugin 'rhysd/vim-clang-format'
 
 call vundle#end()
 " ------------------------------------------------------------------
@@ -139,6 +141,8 @@ set guioptions-=r " remove right scrollbar
 
 set textwidth=80
 set colorcolumn=+1
+
+set autoread
 
 
 " ------------------------------------------------------------------
@@ -287,3 +291,10 @@ let g:multi_cursor_use_default_mapping=1
 " let g:multi_cursor_skip_key            = '<C-x>'
 " let g:multi_cursor_quit_key            = '<Esc>'
 
+" ------------------------------------------------------------------
+" clang format
+" ------------------------------------------------------------------
+nnoremap <leader><leader> :ClangFormat<CR>
+let g:clang_format#code_style  = 'Google'
+autocmd FileType c,cpp,java ClangFormatAutoEnable
+" let g:clang_format#auto_format = 1
