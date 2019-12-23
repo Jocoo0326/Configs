@@ -39,10 +39,12 @@ fi
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_HOME=~/Android/Sdk
+export NDK_HOME=~/Android/ndk/android-ndk-r20
 export ADB_HOME=$ANDROID_HOME/platform-tools
-export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME
+export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME
 export VAGRANT_HOME=/home/jocoo/d/.vagrant.d
 export _JAVA_AWT_WM_NONREPARENTING=1
+export JETTY_HOME=~/d/jetty/current
 eval "$(dircolors ~/.dircolors)"
 
 vbox_config() {
