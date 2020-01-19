@@ -1,0 +1,11 @@
+#!/bin/sh
+
+unsuspend() {
+  job=`at -l -q z | awk '{print $1}'`
+  if [[ ! -z $job ]]; then
+    dunstify "suspend job $job removed "
+    atrm $job
+  fi
+}
+
+unsuspend

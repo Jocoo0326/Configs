@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo 'systemctl suspend' | at -q z now + 10 minutes
+i3lock -i ~/Configs/home_dotfiles/.config/lock.png -n
+~/Configs/home_dotfiles/.scripts/unsuspend
