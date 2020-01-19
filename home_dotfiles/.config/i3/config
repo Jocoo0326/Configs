@@ -222,6 +222,9 @@ exec_always --no-startup-id fcitx-autostart
 # dunst
 exec_always --no-startup-id dunst
 
+# xss-lock
+exec_always --no-startup-id xss-lock -- ~/Configs/home_dotfiles/.scripts/lock
+
 #---------------------------------------------------------------
 # application shortcuts
 #---------------------------------------------------------------

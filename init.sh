@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman -S --noconfirm fcitx dunst git emacs vim NetworkManager
+sudo pacman -S --noconfirm fcitx dunst git emacs vim NetworkManager xss-lock
 ln -sf ~/Configs/home_dotfiles/.bashrc ~/.bashrc
 ln -sf ~/Configs/home_dotfiles/.vimrc ~/.vimrc
 ln -sf ~/Configs/home_dotfiles/.config/i3 ~/.config/i3
