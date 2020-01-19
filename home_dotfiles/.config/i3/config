@@ -219,6 +219,9 @@ exec xrandr --output VGA-1 --mode 1366x768
 # fcitx
 exec_always --no-startup-id fcitx-autostart
 
+# dunst
+exec_always --no-startup-id dunst
+
 #---------------------------------------------------------------
 # application shortcuts
 #---------------------------------------------------------------
