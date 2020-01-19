@@ -7,3 +7,4 @@ ln -sf ~/Configs/home_dotfiles/.config/i3 ~/.config/i3
 ln -sf ~/Configs/home_dotfiles/.config/i3blocks ~/.config/i3blocks
 ln -sf ~/Configs/home_dotfiles/.config/compton ~/.config/compton
 ln -sf ~/Configs/home_dotfiles/.config/rofi ~/.config/rofi
+ln -sf ~/Configs/home_dotfiles/.config/dunst ~/.config/dunst
