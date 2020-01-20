@@ -266,6 +266,9 @@ for_window [class="Genymotion Player"] floating enable resize set 444 709 move p
 # lock screen
 bindsym $mod+Ctrl+l exec ~/Configs/home_dotfiles/.scripts/lock
 
+# suspend
+bindsym $mod+Mod1+s exec systemctl suspend
+
 # switch workspace
 bindsym Mod1+Tab workspace back_and_forth
 
