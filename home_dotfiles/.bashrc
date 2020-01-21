@@ -50,7 +50,7 @@ eval "$(dircolors ~/.dircolors)"
 vbox_config() {
   VBoxClient --clipboard 2>/dev/null
 }
-vbox_config
+#vbox_config
 
 # utils
 mem() {
