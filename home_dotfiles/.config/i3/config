@@ -248,8 +248,9 @@ for_window [class="Emacs"] move to workspace $ws4
 bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
 for_window [class="jetbrains-studio"] move to workspace $ws5
 for_window [title="Welcome to Android Studio"] floating enable
+for_window [title="win0"] move to workspace $ws5 floating enable
 for_window [class="jetbrains-idea"] move to workspace $ws5
-for_window [class="jetbrains-idea-ce"] floating enable
+for_window [class="jetbrains-idea-ce"] move to workspace $ws5
 
 # blender
 for_window [class="Blender"] move to workspace $ws7

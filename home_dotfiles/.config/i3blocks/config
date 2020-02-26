@@ -60,7 +60,7 @@ separator=true
 
 [wifi]
 # instance=wlp5s0
-interval=10
+interval=5
 separator=true
 
 # [bandwidth]
