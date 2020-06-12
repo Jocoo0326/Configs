@@ -1,0 +1,1 @@
+env WINEPREFIX="/home/jocoo/.wine" wine C:\\windows\\command\\start.exe /Unix /home/jocoo/.wine/dosdevices/c:/users/jocoo/Start\ Menu/Programs/Source\ Insight\ 4.0/Source\ Insight\ 4.0.lnk 2>/dev/null

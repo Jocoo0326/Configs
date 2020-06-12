@@ -1,4 +1,5 @@
 export EDITOR='vim'
+export TERMINAL='st'
 hash nvim && alias vim='nvim'
 alias ls='ls --color=auto'
 alias la='ls -A'
@@ -38,14 +39,17 @@ fi
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-export ANDROID_HOME=~/Android/Sdk
-export NDK_HOME=~/Android/ndk/android-ndk-r20
+export ANDROID_HOME=~/d/android/Sdk
+export NDK_HOME=~/d/android/ndk/android-ndk-r20
 export ADB_HOME=$ANDROID_HOME/platform-tools
 export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME
 export VAGRANT_HOME=/home/jocoo/d/.vagrant.d
 export _JAVA_AWT_WM_NONREPARENTING=1
 export JETTY_HOME=~/d/jetty/current
 eval "$(dircolors ~/.dircolors)"
+export XMODIFIERS="@im=fcitx"
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
 
 vbox_config() {
   VBoxClient --clipboard 2>/dev/null
@@ -56,3 +60,6 @@ vbox_config() {
 mem() {
   free -h | awk '/^Mem:/ {print $3 "/" $2}'
 }
+
+# disable system beep
+xset b off

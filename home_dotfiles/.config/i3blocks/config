@@ -59,7 +59,7 @@ separator=true
 # separator=false
 
 [wifi]
-# instance=wlp5s0
+instance=wlp5s0
 interval=5
 separator=true
 

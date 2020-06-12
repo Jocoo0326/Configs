@@ -1,0 +1,4 @@
+set nu
+set rnu
+set surround
+set multiple-cursors
