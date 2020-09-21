@@ -1,74 +1,70 @@
 " ------------------------------------------------------------------
-" vundle config
+" Plug config
 " ------------------------------------------------------------------
 set nocompatible
 filetype off
 
-if has('unix')
-  set rtp+=~/.vim/bundle/Vundle.vim
-  call vundle#begin()
-elseif has('win32') || has('win64')
-  set rtp+=$HOME/vimfiles/bundle/Vundle.vim
-  call vundle#begin('$HOME/vimfiles/bundle/')
-endif
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
-" Plugin 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 
-Plugin 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 
-Plugin 'w0ng/vim-hybrid'
+Plug 'w0ng/vim-hybrid'
 
-Plugin 'trusktr/seti.vim'
+Plug 'trusktr/seti.vim'
 
-Plugin 'tyrannicaltoucan/vim-deep-space'
+Plug 'tyrannicaltoucan/vim-deep-space'
 
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
-Plugin 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'
 
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
-Plugin 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 
-Plugin 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate'
 
-" Plugin 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
-Plugin 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
-Plugin 'aquach/vim-http-client'
+Plug 'aquach/vim-http-client'
 
-Plugin 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline-themes'
 
-Plugin 'http://git.coding.net/xzpnuist/vim-translate-plugin.git'
+" Plug 'http://git.coding.net/xzpnuist/vim-translate-plugin.git'
 
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
-Plugin 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 
-" Plugin 'w0rp/ale'
+" Plug 'w0rp/ale'
 
-Plugin 'tpope/vim-unimpaired'
+Plug 'tpope/vim-unimpaired'
 
-Plugin 'tommcdo/vim-exchange'
+Plug 'tommcdo/vim-exchange'
 
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 
-Plugin 'rhysd/vim-clang-format'
+Plug 'rhysd/vim-clang-format'
 
-call vundle#end()
+Plug 'neoclide/coc.nvim'
+
+call plug#end()
 " ------------------------------------------------------------------
 
 function! Platform()

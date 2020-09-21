@@ -28,6 +28,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gc='git commit'
 alias in='adb shell input text'
+alias sd='sudo docker'
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
@@ -42,7 +43,11 @@ export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_HOME=~/d/android/Sdk
 export NDK_HOME=~/d/android/ndk/android-ndk-r20
 export ADB_HOME=$ANDROID_HOME/platform-tools
-export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export FLUTTER_HOME=~/d/workspace/flutter
+export DART_SDK_ROOT=~/d/workspace/flutter/bin/cache/dart-sdk
+export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME:$FLUTTER_HOME/bin:$DART_SDK_ROOT/bin
 export VAGRANT_HOME=/home/jocoo/d/.vagrant.d
 export _JAVA_AWT_WM_NONREPARENTING=1
 export JETTY_HOME=~/d/jetty/current
