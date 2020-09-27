@@ -10,17 +10,15 @@ Plug 'VundleVim/Vundle.vim'
 
 Plug 'altercation/vim-colors-solarized'
 
-" Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
+
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'mattn/emmet-vim'
-
-Plug 'w0ng/vim-hybrid'
 
 Plug 'trusktr/seti.vim'
 
 Plug 'tyrannicaltoucan/vim-deep-space'
-
-Plug 'kien/ctrlp.vim'
 
 Plug 'scrooloose/nerdcommenter'
 
@@ -52,8 +50,6 @@ Plug 'godlygeek/tabular'
 
 Plug 'morhetz/gruvbox'
 
-" Plug 'w0rp/ale'
-
 Plug 'tpope/vim-unimpaired'
 
 Plug 'tommcdo/vim-exchange'
@@ -63,6 +59,20 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'rhysd/vim-clang-format'
 
 Plug 'neoclide/coc.nvim'
+
+if has('nvim')
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/denite.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 " ------------------------------------------------------------------
@@ -203,12 +213,6 @@ set tags=tags;
 
 
 " ------------------------------------------------------------------
-" set CtrlP
-" ------------------------------------------------------------------
-let g:ctrlp_working_path_mode = 'ra'
-
-
-" ------------------------------------------------------------------
 " set nerdCommenter
 " ------------------------------------------------------------------
 let g:NERDSpaceDelims=1
@@ -288,9 +292,107 @@ let g:multi_cursor_use_default_mapping=1
 " let g:multi_cursor_quit_key            = '<Esc>'
 
 " ------------------------------------------------------------------
+" denite
+" ------------------------------------------------------------------
+let g:user_emmet_leader_key=','
+
+" ------------------------------------------------------------------
 " clang format
 " ------------------------------------------------------------------
 nnoremap <leader><leader> :ClangFormat<CR>
 let g:clang_format#code_style  = 'Google'
 autocmd FileType c,cpp,java ClangFormatAutoEnable
 " let g:clang_format#auto_format = 1
+
+" ------------------------------------------------------------------
+" denite
+" ------------------------------------------------------------------
+call denite#custom#alias('source', 'file_rec', 'file/rec')
+call denite#custom#var('file_rec', 'command',
+      \['ag', '--follow', '-g', '', '--ignore', '.git'])
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+  \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> q
+  \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> <Esc>
+  \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> d
+  \ denite#do_map('do_action', 'delete')
+  nnoremap <silent><buffer><expr> p
+  \ denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> i
+  \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <C-o>
+  \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <C-t>
+  \ denite#do_map('do_action', 'tabopen')
+  nnoremap <silent><buffer><expr> <C-v>
+  \ denite#do_map('do_action', 'vsplit')
+  nnoremap <silent><buffer><expr> <C-h>
+  \ denite#do_map('do_action', 'split')
+endfunction
+autocmd FileType denite-filter call s:denite_filter_my_settings()
+function! s:denite_filter_my_settings() abort
+  imap <silent><buffer> <C-o>
+  \ <Plug>(denite_filter_quit)
+  inoremap <silent><buffer><expr> <Esc>
+  \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> <Esc>
+  \ denite#do_map('quit')
+  inoremap <silent><buffer><expr> <CR>
+  \ denite#do_map('do_action')
+  inoremap <silent><buffer><expr> <C-t>
+  \ denite#do_map('do_action', 'tabopen')
+  inoremap <silent><buffer><expr> <C-v>
+  \ denite#do_map('do_action', 'vsplit')
+  inoremap <silent><buffer><expr> <C-h>
+  \ denite#do_map('do_action', 'split')
+  inoremap <silent><buffer> <C-j> <Esc>
+        \:call denite#move_to_parent()<CR>
+        \:call cursor(line('.')+1,0)<CR>
+        \:call denite#move_to_filter()<CR>A
+  inoremap <silent><buffer> <C-k> <Esc>
+        \:call denite#move_to_parent()<CR>
+        \:call cursor(line('.')-1,0)<CR>
+        \:call denite#move_to_filter()<CR>A
+endfunction
+" Custom options for Denite
+"   auto_resize             - Auto resize the Denite window height automatically.
+"   prompt                  - Customize denite prompt
+"   direction               - Specify Denite window direction as directly below current pane
+"   winminheight            - Specify min height for Denite window
+"   highlight_mode_insert   - Specify h1-CursorLine in insert mode
+"   prompt_highlight        - Specify color of prompt
+"   highlight_matched_char  - Matched characters highlight
+"   highlight_matched_range - matched range highlight
+let s:denite_options = {'_' : {
+\ 'split': 'floating',
+\ 'start_filter': 1,
+\ 'auto_resize': 1,
+\ 'source_names': 'short',
+\ 'prompt': 'λ ',
+\ 'highlight_matched_char': 'QuickFixLine',
+\ 'highlight_matched_range': 'Visual',
+\ 'highlight_window_background': 'Visual',
+\ 'highlight_filter_background': 'DiffAdd',
+\ 'winrow': 1,
+\ 'vertical_preview': 1
+\ }}
+" Loop through denite options and enable them
+function! s:profile(opts) abort
+  for l:fname in keys(a:opts)
+    for l:dopt in keys(a:opts[l:fname])
+      call denite#custom#option(l:fname, l:dopt, a:opts[l:fname][l:dopt])
+    endfor
+  endfor
+endfunction
+call s:profile(s:denite_options)
+map <silent> <C-p> :DeniteProjectDir -buffer-name=files -direction=top file_rec <CR>
+
+" ------------------------------------------------------------------
+" denite
+" ------------------------------------------------------------------
+autocmd BufWritePre *.vue,*.js,*.html,*.css,*.less,*.scss,*.ts Prettier
+let g:prettier#autoformat_config_files = ['.prettierrc.json']
