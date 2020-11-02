@@ -1,4 +1,4 @@
-export EDITOR='vim'
+export EDITOR='nvim'
 export TERMINAL='st'
 hash nvim && alias vim='nvim'
 alias ls='ls --color=auto'

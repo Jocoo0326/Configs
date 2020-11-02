@@ -390,6 +390,7 @@ function! s:profile(opts) abort
 endfunction
 call s:profile(s:denite_options)
 map <silent> <C-p> :DeniteProjectDir -buffer-name=files -direction=top file_rec <CR>
+map <silent> <C-b> :DeniteBufferDir -buffer-name=buffers -direction=top buffer <CR>
 
 " ------------------------------------------------------------------
 " denite

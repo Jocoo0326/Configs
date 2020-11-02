@@ -138,11 +138,11 @@ import stat
 import subprocess
 import sys
 
-# socks5 support
-#  import socks
-#  import socket
-#  socks.set_default_proxy(socks.SOCKS5, "localhost", 1080)
-#  socket.socket=socks.socksocket
+#  socks5 support
+import socks
+import socket
+socks.set_default_proxy(socks.SOCKS5, "localhost", 1080)
+socket.socket=socks.socksocket
 
 if sys.version_info[0] == 3:
   import urllib.request
