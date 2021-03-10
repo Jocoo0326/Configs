@@ -28,6 +28,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gc='git commit'
 alias in='adb shell input text'
+alias input='adb shell input text'
 alias sd='sudo docker'
 
 git_branch() {
@@ -38,7 +39,7 @@ if [[ $SHELL = "bash" ]]; then
   export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\[\e[36m\]$(git_branch)\[\e[0m\]\n\[\e[35m\]\$\[\e[0m\] '
 fi
 
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_HOME=~/d/android/Sdk
 export NDK_HOME=~/d/android/ndk/android-ndk-r20

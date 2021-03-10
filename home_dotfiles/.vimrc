@@ -310,6 +310,14 @@ autocmd FileType c,cpp,java ClangFormatAutoEnable
 call denite#custom#alias('source', 'file_rec', 'file/rec')
 call denite#custom#var('file_rec', 'command',
       \['ag', '--follow', '-g', '', '--ignore', '.git'])
+call denite#custom#var('grep', {
+      \ 'command': ['ag'],
+      \ 'default_opts': ['-i', '--vimgrep'],
+      \ 'recursive_opts': [],
+      \ 'pattern_opt': [],
+      \ 'separator': ['--'],
+      \ 'final_opts': [],
+      \ })
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <CR>
@@ -391,6 +399,7 @@ endfunction
 call s:profile(s:denite_options)
 map <silent> <C-p> :DeniteProjectDir -buffer-name=files -direction=top file_rec <CR>
 map <silent> <C-b> :DeniteBufferDir -buffer-name=buffers -direction=top buffer <CR>
+map <silent> <C-s> :Denite -buffer-name=grep -direction=top grep <CR>
 
 " ------------------------------------------------------------------
 " denite
