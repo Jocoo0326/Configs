@@ -406,3 +406,14 @@ map <silent> <C-s> :Denite -buffer-name=grep -direction=top grep <CR>
 " ------------------------------------------------------------------
 autocmd BufWritePre *.vue,*.js,*.html,*.css,*.less,*.scss,*.ts Prettier
 let g:prettier#autoformat_config_files = ['.prettierrc.json']
+
+function! ClipboardYank()
+  call system('xclip -i -selection clipboard', @@)
+endfunction
+function! ClipboardPaste()
+  let @@ = system('xclip -o -selection clipboard')
+endfunction
+
+" vnoremap <silent> <C-c> :call ClipboardYank()<cr>
+" vnoremap <silent> d d:call ClipboardYank()<cr>
+" nnoremap <silent> p :call ClipboardPaste()<cr>p

@@ -30,6 +30,7 @@ alias gc='git commit'
 alias in='adb shell input text'
 alias input='adb shell input text'
 alias sd='sudo docker'
+alias fh='free -h'
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
@@ -69,3 +70,8 @@ mem() {
 
 # disable system beep
 xset b off
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export http_proxy=''
+export https_proxy=''
+export ftp_proxy=''
+export socks_proxy=''
