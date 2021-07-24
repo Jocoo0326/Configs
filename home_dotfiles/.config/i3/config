@@ -124,7 +124,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+h workspace prev
 bindsym $mod+l workspace next
 
-workspace_layout tabbed
+workspace_layout stacking
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

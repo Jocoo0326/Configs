@@ -70,7 +70,6 @@ mem() {
 
 # disable system beep
 xset b off
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export http_proxy=''
 export https_proxy=''
 export ftp_proxy=''
