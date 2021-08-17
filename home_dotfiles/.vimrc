@@ -159,10 +159,10 @@ no <up> ddkP
 nmap <Tab> :tabnext<CR>
 nmap <C-d> yyp  " copy current line
 nnoremap <leader>ctags :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-nnoremap <C-c> "*yiw
-vnoremap <C-c> "*y
-nnoremap <C-v> i<C-r>*<Esc>0
-inoremap <C-v> <C-r>*
+" nnoremap <C-c> "*yiw
+" vnoremap <C-c> "*y
+" nnoremap <C-v> i<C-r>*<Esc>0
+" inoremap <C-v> <C-r>*
 nnoremap <leader>vimrc :tabedit $MYVIMRC<CR>
 nnoremap <leader>rl :source $MYVIMRC<CR>
 
