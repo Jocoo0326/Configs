@@ -400,6 +400,7 @@ call s:profile(s:denite_options)
 map <silent> <C-p> :DeniteProjectDir -buffer-name=files -direction=top file_rec <CR>
 map <silent> <C-b> :DeniteBufferDir -buffer-name=buffers -direction=top buffer <CR>
 map <silent> <C-s> :Denite -buffer-name=grep -direction=top grep <CR>
+map <silent> <C-x> :DeniteCursorWord -buffer-name=grep -direction=top grep <CR>
 
 " ------------------------------------------------------------------
 " denite

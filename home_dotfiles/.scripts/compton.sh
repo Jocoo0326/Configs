@@ -1,7 +1,7 @@
 #!/bin/sh
 
-killall -q compton
+killall -q picom
 
-while pgrep -x compton >/dev/null; do sleep 1; done
+while pgrep -x picom >/dev/null; do sleep 1; done
 
-compton --config ~/.config/compton/compton.conf -bf &
+picom --config ~/.config/compton/compton.conf -bf &
