@@ -77,10 +77,13 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%")
 
     -- launch dmenu
-    , ((modm,               xK_p     ), spawn "dmenu_run")
+    , ((modm,               xK_p     ), spawn "j4-dmenu-desktop")
 
     -- toggle dock
     ,((modm, xK_b     ), sendMessage ToggleStruts)
+
+    -- google chrome
+    ,((modm .|. shiftMask,  xK_b     ), spawn "google-chrome-stable")
 
     -- lock
     , ((modm .|. shiftMask, xK_l     ), spawn "xautolock -locknow")
@@ -98,7 +101,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_n     ), refresh)
 
     -- Move focus to the next window
-    , ((modm,               xK_Tab   ), windows W.focusDown)
+    , ((mod1Mask,           xK_Tab   ), windows W.focusDown)
 
     -- Move focus to the next window
     , ((modm,               xK_j     ), windows W.focusDown)
@@ -198,19 +201,11 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full ||| OneBig (3/4) (3/4))
-  where
-     -- default tiling algorithm partitions the screen into two panes
-     tiled   = Tall nmaster delta ratio
-
-     -- The default number of windows in the master pane
-     nmaster = 1
-
-     -- Default proportion of screen occupied by master pane
-     ratio   = 1/2
-
-     -- Percent of screen to increment by when resizing panes
-     delta   = 3/100
+myLayout = avoidStruts(
+  Tall 1 (3/100) (1/2) |||
+  Mirror (Tall 1 (3/100) (1/2)) |||
+  Full |||
+  OneBig (3/4) (3/4))
 
 ------------------------------------------------------------------------
 -- Window rules:
@@ -230,6 +225,7 @@ myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full ||| OneBig (3/4) (3/4))
 myManageHook = composeAll
     [ className =? "MPlayer"        --> doFloat
     , className =? "Gimp"           --> doFloat
+    , title =? "win0"               --> doIgnore
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ]
 
@@ -264,7 +260,7 @@ myStartupHook = do
   spawnOnce "~/.scripts/wallpaper &"
   spawnOnce "~/.scripts/compton.sh &"
   spawnOnce "xfce4-power-manager &"
-  spawnOnce "xautolock -time 1 -locker slock &"
+  spawnOnce "xautolock -time 10 -locker ~/.scripts/lock &"
   spawnOnce "fcitx-autostart"
   setWMName "LG3D"
 

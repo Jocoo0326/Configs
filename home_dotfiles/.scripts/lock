@@ -1,5 +1,6 @@
 #!/bin/sh
 
-echo 'systemctl suspend' | at -q z now + 10 minutes
-i3lock -i ~/Configs/home_dotfiles/.config/lock.png -n
-~/Configs/home_dotfiles/.scripts/unsuspend
+rm /tmp/screenshot.png
+scrot /tmp/screenshot.png
+convert /tmp/screenshot.png -blur 0x8 /tmp/screenshotblur.png
+i3lock -i /tmp/screenshotblur.png

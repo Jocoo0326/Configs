@@ -1,0 +1,34 @@
+State=AAAA/wAAAAD9AAAAAAAABSgAAAKXAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAABxf////8AAAAAAAAAAA==
+StatusBar=Disabled
+eDP1 Window-Maximized 1366x768=true
+eDP1 XPosition 1366x768=46
+eDP1 YPosition 1366x768=29
+
+[Favorite Profiles]
+Favorites=Breath2.profile
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABVYAAALtAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+eDP1 Height 1366x768=749
+eDP1 Height 768=744
+eDP1 Width 1366=1320
+eDP1 Width 1366x768=1364
+eDP1 Window-Maximized 1366x768=true
+eDP1 Window-Maximized 768x1366=true
+eDP1 XPosition=46
+eDP1 XPosition 1366x768=0
+eDP1 YPosition=24
+eDP1 YPosition 1366x768=19
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+CloseAllTabs=true
