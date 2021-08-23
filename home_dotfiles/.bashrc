@@ -42,6 +42,7 @@ if [[ $SHELL = "bash" ]]; then
   export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\[\e[36m\]$(git_branch)\[\e[0m\]\n\[\e[35m\]\$\[\e[0m\] '
 fi
 
+export GRADLE_USER_HOME=/home/jocoo/d/.gradle
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_HOME=~/d/android/Sdk
@@ -51,7 +52,7 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export FLUTTER_HOME=~/d/workspace/flutter
 export DART_SDK_ROOT=~/d/workspace/flutter/bin/cache/dart-sdk
-export PATH=$PATH:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME:$FLUTTER_HOME/bin:$DART_SDK_ROOT/bin
+export PATH=$PATH:~/.cabal/bin:~/.ghcup/bin:~/.ghcup/ghc/8.10.6/bin:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME:$FLUTTER_HOME/bin:$DART_SDK_ROOT/bin
 export VAGRANT_HOME=/home/jocoo/d/.vagrant.d
 export _JAVA_AWT_WM_NONREPARENTING=1
 export JETTY_HOME=~/d/jetty/current

@@ -25,9 +25,9 @@ eDP1 Width 1366x768=1364
 eDP1 Window-Maximized 1366x768=true
 eDP1 Window-Maximized 768x1366=true
 eDP1 XPosition=46
-eDP1 XPosition 1366x768=0
+eDP1 XPosition 1366x768=46
 eDP1 YPosition=24
-eDP1 YPosition 1366x768=19
+eDP1 YPosition 1366x768=29
 
 [Notification Messages]
 CloseAllEmptyTabs=true
