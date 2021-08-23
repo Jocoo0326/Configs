@@ -188,6 +188,12 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
                                        >> windows W.shiftMaster))
 
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
+    -- brightness
+    , ((modm, button4), (\w -> spawn "xbacklight -inc 10"))
+    , ((modm, button5), (\w -> spawn "xbacklight -dec 10"))
+    -- volume
+    , ((mod1Mask, button4), (\w -> spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%"))
+    , ((mod1Mask, button5), (\w -> spawn "pactl set-sink-volume @DEFAULT_SINK@ -10%"))
     ]
 
 ------------------------------------------------------------------------
