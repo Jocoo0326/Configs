@@ -26,7 +26,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "st"
+myTerminal      = "konsole"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -72,9 +72,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
 
     -- volume keys
-    , ((0, xF86XK_AudioMute), spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
-    , ((0, xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ -10%")
-    , ((0, xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%")
+    , ((mod1Mask, xK_m), spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
+    , ((mod1Mask, xK_Down), spawn "pactl set-sink-volume @DEFAULT_SINK@ -10%")
+    , ((mod1Mask, xK_Up), spawn "pactl set-sink-volume @DEFAULT_SINK@ +10%")
 
     -- launch dmenu
     , ((modm,               xK_p     ), spawn "j4-dmenu-desktop")
