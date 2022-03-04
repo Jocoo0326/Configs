@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 """Repo launcher.
@@ -15,7 +15,7 @@ from __future__ import print_function
 import os
 REPO_URL = os.environ.get('REPO_URL', None)
 if not REPO_URL:
-  REPO_URL = 'https://gerrit.googlesource.com/git-repo'
+  REPO_URL = 'https://gerrit-googlesource.proxy.ustclug.org/git-repo'
 REPO_REV = 'stable'
 
 # Copyright (C) 2008 Google Inc.
@@ -141,8 +141,8 @@ import sys
 #  socks5 support
 import socks
 import socket
-socks.set_default_proxy(socks.SOCKS5, "localhost", 1080)
-socket.socket=socks.socksocket
+#  socks.set_default_proxy(socks.SOCKS5, "localhost", 1080)
+#  socket.socket=socks.socksocket
 
 if sys.version_info[0] == 3:
   import urllib.request
@@ -551,7 +551,7 @@ def _InitHttp():
 
   if 'http_proxy' in os.environ:
     url = os.environ['http_proxy']
-    handlers.append(urllib.request.ProxyHandler({'http': url, 'https': url}))
+    #  handlers.append(urllib.request.ProxyHandler({'http': url, 'https': url}))
   if 'REPO_CURL_VERBOSE' in os.environ:
     handlers.append(urllib.request.HTTPHandler(debuglevel=1))
     handlers.append(urllib.request.HTTPSHandler(debuglevel=1))
@@ -607,6 +607,7 @@ def _DownloadBundle(url, local, quiet):
   dest = open(os.path.join(local, '.git', 'clone.bundle'), 'w+b')
   try:
     try:
+      print(url)
       r = urllib.request.urlopen(url)
     except urllib.error.HTTPError as e:
       if e.code in [401, 403, 404, 501]:
@@ -928,6 +929,7 @@ def main(orig_args):
         '--wrapper-version=%s' % ver_str,
         '--wrapper-path=%s' % wrapper_path,
         '--']
+  print(me)
   me.extend(orig_args)
   me.extend(extra_args)
   try:
