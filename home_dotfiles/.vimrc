@@ -209,7 +209,7 @@ set backspace=indent,eol,start
 " ------------------------------------------------------------------
 " set tags
 " ------------------------------------------------------------------
-set tags=tags;
+" set tags=tags;
 
 
 " ------------------------------------------------------------------
@@ -456,6 +456,10 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
+function! s:nav_to_source()
+  execute "CocCommand clangd.switchSourceHeader"
+endfunction
+nmap <silent> gs :call <SID>nav_to_source()<CR>
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 

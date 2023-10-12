@@ -43,16 +43,17 @@ if [[ $SHELL = "bash" ]]; then
 fi
 
 export GRADLE_USER_HOME=/home/jocoo/d/.gradle
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-export ANDROID_HOME=~/Android/Sdk
-export NDK_HOME=~/Android/ndk/android-ndk-r20
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+#export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export ANDROID_HOME=~/d/Android/Sdk
+#export NDK_HOME=~/Android/ndk/android-ndk-r20
 export ADB_HOME=$ANDROID_HOME/platform-tools
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export FLUTTER_HOME=~/workspace/flutter
 export DART_SDK_ROOT=~/workspace/flutter/bin/cache/dart-sdk
-export PATH=$JAVA_HOME/bin:~/.cabal/bin:~/.ghcup/bin:~/.ghcup/ghc/8.10.6/bin:~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME:$FLUTTER_HOME/bin:$DART_SDK_ROOT/bin:$PATH
+export PATH_NO_JAVA=~/.scripts:$ADB_HOME:$ANDROID_HOME:$NDK_HOME:$FLUTTER_HOME/bin:$DART_SDK_ROOT/bin:$PATH
+export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
 export VAGRANT_HOME=/home/jocoo/.vagrant.d
 export _JAVA_AWT_WM_NONREPARENTING=1
 export JETTY_HOME=~/jetty/current
@@ -77,3 +78,19 @@ export http_proxy=''
 export https_proxy=''
 export ftp_proxy=''
 export socks_proxy=''
+
+# switch java 17
+java17() {
+  export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+  export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
+  java -version
+}
+java11() {
+  export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+  export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
+  java -version
+}
+# evict child java process
+evict_following_java() {
+  pgrep java | awk 'NR!=1 {system("kill -9 "$1)}'
+}
