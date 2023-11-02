@@ -17,12 +17,12 @@ markup=pongo
 # The second parameter overrides the mixer selection
 # See the script for details.
 [volume]
-# label=VOL
-# label=♪
-# instance=Master
-# instance=PCM
-interval=once
-signal=10
+label=VOL
+label=♪
+instance=Master
+instance=PCM
+# interval=once
+# signal=10
 
 # Memory usage
 #
@@ -59,7 +59,7 @@ separator=true
 # separator=false
 
 [wifi]
-instance=wlp5s0
+instance=wlp2s0
 interval=5
 separator=true
 
@@ -83,11 +83,11 @@ separator=true
 # Battery indicator
 #
 # The battery instance defaults to 0.
-[battery]
+# [battery]
 # label=BAT
 #label=⚡
 #instance=1
-interval=30
+# interval=30
 
 # Date Time
 #

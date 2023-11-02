@@ -8,16 +8,17 @@
 # i3 config file (v4) # # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod4
 
-set $editor st
+set $editor terminator
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#font pango:monospace 12
+# font pango:monospace 10
+font pango:Inconsolata 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
-# font pango:Fira Code 8
+# font pango:DejaVu Sans Mono 14
+# font pango:Fira Code 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -87,15 +88,25 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-set $ws1 "1:Term"
-set $ws2 "2:Browser"
-set $ws3 "3:Gvim"
-set $ws4 "4:Emacs"
-set $ws5 "5:Studio"
-set $ws6 "6:Music"
-set $ws7 "7:Blender"
+# set $ws1 "1:Term"
+# set $ws2 "2:Browser"
+# set $ws3 "3:Gvim"
+# set $ws4 "4:Emacs"
+# set $ws5 "5:Studio"
+# set $ws6 "6:Music"
+# set $ws7 "7:Blender"
+# set $ws8 "8"
+# set $ws9 "9:Vbox"
+# set $ws10 "10"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9:Vbox"
+set $ws9 "9"
 set $ws10 "10"
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -124,7 +135,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+h workspace prev
 bindsym $mod+l workspace next
 
-workspace_layout stacking
+workspace_layout tabbed
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -176,23 +187,32 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks
+        # status_command i3status
         position top
-        colors {
-          background $bg-color
-          separator #757575
-          #                  border             background         text
-          focused_workspace  $focused-color     $focused-color     $text-color
-          inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-          urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-        }
+        # colors {
+          # background $bg-color
+          # separator #757575
+          # #                  border             background         text
+          # focused_workspace  $focused-color     $focused-color     $text-color
+          # inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+          # urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+        # }
+        status_command /usr/bin/bumblebee-status \
+        -m memory nic datetime pasink \
+        -p nic.states="up" nic.format="{ssid}" \
+        datetime.format="%Y/%m/%d %H:%M" \
+        -t iceberg
 }
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Pulse Audio controls
-bindsym $mod+Mod1+k exec ~/Configs/home_dotfiles/.scripts/volume +
-bindsym $mod+Mod1+j exec ~/Configs/home_dotfiles/.scripts/volume -
-bindsym $mod+Mod1+m exec ~/Configs/home_dotfiles/.scripts/volume m
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# bindsym $mod+Mod1+k exec ~/Configs/home_dotfiles/.scripts/volume +
+# bindsym $mod+Mod1+j exec ~/Configs/home_dotfiles/.scripts/volume -
+# bindsym $mod+Mod1+m exec ~/Configs/home_dotfiles/.scripts/volume m
 
 # Sreen brightness controls
 bindsym $mod+Mod1+l exec xbacklight -inc 20 # increase screen brightness
@@ -202,9 +222,9 @@ bindsym $mod+Mod1+h exec xbacklight -dec 20 # decrease screen brightness
 # desktop appearence
 #---------------------------------------------------------------
 
-for_window [class="^.*"] border pixel 1
-workspace $ws1 gaps inner 6
-workspace $ws1 gaps outer 6
+for_window [class="^.*"] border pixel 1 floating enable
+workspace $ws1 gaps inner 0
+workspace $ws1 gaps outer 0
 
 # desktop background
 # exec_always feh --bg-scale ~/Configs/home_dotfiles/.config/wall.jpg
@@ -214,49 +234,54 @@ exec_always --no-startup-id ~/Configs/home_dotfiles/.scripts/wallpaper
 exec_always --no-startup-id ~/Configs/home_dotfiles/.scripts/compton.sh
 
 # screen resolution
-exec xrandr --output VGA-1 --mode 1366x768
+exec_always xrandr --output DisplayPort-1 --mode 2560x1600 --scale 1
 
 # fcitx
 exec_always --no-startup-id fcitx-autostart
 
 # dunst
-exec_always --no-startup-id dunst
+exec_always --no-startup-id dunst -conf $HOME/Configs/home_dotfiles/.config/dunst/dunstrc
 
 # xss-lock
 exec_always --no-startup-id xss-lock -- ~/Configs/home_dotfiles/.scripts/lock
+
+exec --no-startup-id cfw
 
 #---------------------------------------------------------------
 # application shortcuts
 #---------------------------------------------------------------
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -config ~/Configs/home_dotfiles/.config/rofi/config
-
-# gvim
-bindsym $mod+shift+g exec gvim
-for_window [class="Gvim"] move to workspace $ws3
+# bindsym $mod+d exec rofi -show run -config ~/Configs/home_dotfiles/.config/rofi/config
+bindsym $mod+d exec dmenu_run
 
 # launch chromium to workspace 2
-bindsym $mod+shift+b exec google-chrome-stable
+# bindsym $mod+shift+b exec google-chrome-stable
 for_window [class="Google-chrome"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws2
+for_window [class="Terminator"] floating disable
 
+
+# gvim
+# bindsym $mod+shift+g exec gvim
+# for_window [class="Gvim"] move to workspace $ws3
 # emacs
-bindsym $mod+shift+m exec emacs
-for_window [class="Emacs"] move to workspace $ws4
+# bindsym $mod+shift+m exec emacs
+# for_window [class="Emacs"] move to workspace $ws4
 
 # android studio
-bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
-for_window [class="jetbrains-studio"] move to workspace $ws5
+# bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
+for_window [class="jetbrains-studio"] move to workspace $ws3
 for_window [title="Welcome to Android Studio"] floating enable
 for_window [title="win0"] move to workspace $ws5 floating enable
-for_window [class="jetbrains-idea"] move to workspace $ws5
-for_window [class="jetbrains-idea-ce"] move to workspace $ws5
+for_window [class="jetbrains-idea"] move to workspace $ws3
+for_window [class="jetbrains-idea-ce"] move to workspace $ws3
 
 # blender
 for_window [class="Blender"] move to workspace $ws7
 
 # virtualbox
-for_window [class="VirtualBox Machine"] move to workspace $ws9
+for_window [class="VirtualBox Machine"] move to workspace $ws4 floating disable
 
 # vscode
 for_window [class="code-oss"] move to workspace $ws3
@@ -268,10 +293,10 @@ for_window [class="Genymotion Player"] floating enable resize set 444 709 move p
 for_window [class="wechat.exe"] floating enable
 
 # tim
-for_window [class="tim.exe"] floating enable
+for_window [class="QQ"] floating enable border pixel 0
 
 # lock screen
-bindsym $mod+Ctrl+l exec ~/Configs/home_dotfiles/.scripts/lock
+bindsym $mod+Ctrl+l exec xset s activate
 
 # suspend
 bindsym $mod+Mod1+s exec systemctl suspend

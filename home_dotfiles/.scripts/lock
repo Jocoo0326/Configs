@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm /tmp/screenshot.png
-scrot /tmp/screenshot.png
-convert /tmp/screenshot.png -blur 0x8 /tmp/screenshotblur.png
-i3lock -i /tmp/screenshotblur.png
+# rm /tmp/screenshot.png
+# scrot /tmp/screenshot.png
+# convert /tmp/screenshot.png -blur 0x8 /tmp/screenshotblur.png
+pgrep -x i3lock || i3lock -i /usr/share/backgrounds/manjaro/ostpv3-d.png

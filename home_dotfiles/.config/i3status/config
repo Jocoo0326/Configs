@@ -17,7 +17,7 @@ general {
 order += "wireless _first_"
 # order += "ethernet _first_"
 order += "volume master"
-order += "battery all"
+# order += "battery all"
 order += "memory"
 # order += "load"
 order += "tztime local"
@@ -46,7 +46,7 @@ battery all {
 }
 
 tztime local {
-  format = "%H:%M:%S %Y/%m/%d"
+  format = "%Y/%m/%d %H:%M:%S"
 }
 
 load {

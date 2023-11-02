@@ -1,5 +1,7 @@
 #!/bin/sh
 
+["${ls -A /sys/class/power_supply}"] || exit 0
+
 ADP=$(ls /sys/class/power_supply | head -1)
 BAT=$(ls /sys/class/power_supply | tail -1)
 

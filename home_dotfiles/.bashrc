@@ -43,9 +43,9 @@ if [[ $SHELL = "bash" ]]; then
 fi
 
 export GRADLE_USER_HOME=/home/jocoo/d/.gradle
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 #export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-export ANDROID_HOME=~/d/Android/Sdk
+export ANDROID_HOME=~/Android/Sdk
 #export NDK_HOME=~/Android/ndk/android-ndk-r20
 export ADB_HOME=$ANDROID_HOME/platform-tools
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
@@ -81,12 +81,12 @@ export socks_proxy=''
 
 # switch java 17
 java17() {
-  export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+  export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
   export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
   java -version
 }
 java11() {
-  export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+  export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
   export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
   java -version
 }
