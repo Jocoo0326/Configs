@@ -8,4 +8,5 @@ frame_width = 1
 corner_radius = 10
 icon_theme = "Adwaita"
 max_icon_size = 48
+icon_corner_radius = 10
 icon_path = "/usr/share/icons/Adwaita/scalable/devices:/usr/share/icons/Papirus/32x32/devices"

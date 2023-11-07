@@ -17,7 +17,7 @@ else
 fi
 # wallpapers_path=~/Configs/home_dotfiles/.config
 # files=(`find $wallpapers_path -maxdepth 1 -type f -name "wall-*"`)
-wallpapers_path=/usr/share/backgrounds/gnome
+wallpapers_path=/usr/share/backgrounds/manjaro-gnome
 files=(`find $wallpapers_path -maxdepth 1 -type f`)
 lastpic=-1
 while true; do

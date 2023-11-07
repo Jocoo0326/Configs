@@ -243,7 +243,8 @@ exec_always --no-startup-id fcitx-autostart
 exec_always --no-startup-id dunst -conf $HOME/Configs/home_dotfiles/.config/dunst/dunstrc
 
 # xss-lock
-exec_always --no-startup-id xss-lock -- ~/Configs/home_dotfiles/.scripts/lock
+exec_always --no-startup-id xss-lock -n "notify-send -t 3000 'About to Locking'" -- ~/Configs/home_dotfiles/.scripts/lock
+exec --no-startup-id $HOME/Configs/home_dotfiles/.scripts/idlehook
 
 exec --no-startup-id cfw
 
@@ -277,10 +278,14 @@ for_window [title="win0"] move to workspace $ws5 floating enable
 for_window [class="jetbrains-idea"] move to workspace $ws3
 for_window [class="jetbrains-idea-ce"] move to workspace $ws3
 
+# spotify
+for_window [class="Spotify"] move to workspace $ws4 floating enable border pixel 0
+
 # blender
 for_window [class="Blender"] move to workspace $ws7
 
 # virtualbox
+for_window [class="VirtualBox Manager"] move to workspace $ws4 floating disable
 for_window [class="VirtualBox Machine"] move to workspace $ws4 floating disable
 
 # vscode
