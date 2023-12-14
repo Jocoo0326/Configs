@@ -13,7 +13,7 @@ set $editor terminator
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 10
-font pango:Inconsolata 12
+font pango:Inconsolata 14
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -259,8 +259,10 @@ bindsym $mod+d exec dmenu_run
 # launch chromium to workspace 2
 # bindsym $mod+shift+b exec google-chrome-stable
 for_window [class="Google-chrome"] move to workspace $ws2
-for_window [class="firefox"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws2 floating disable
+for_window [class="firefox" window_role="About"] floating enable
 for_window [class="Terminator"] floating disable
+for_window [class="St"] floating disable
 
 
 # gvim
@@ -268,15 +270,21 @@ for_window [class="Terminator"] floating disable
 # for_window [class="Gvim"] move to workspace $ws3
 # emacs
 # bindsym $mod+shift+m exec emacs
-# for_window [class="Emacs"] move to workspace $ws4
+for_window [class="Emacs"] floating disable
+
+for_window [class="org.gnome.Nautilus"] floating disable
+for_window [class="libreoffice"] floating disable
 
 # android studio
 # bindsym $mod+shift+s exec /opt/android-studio/bin/studio.sh
-for_window [class="jetbrains-studio"] move to workspace $ws3
+for_window [class="jetbrains-studio"] move to workspace $ws3 floating disable
 for_window [title="Welcome to Android Studio"] floating enable
 for_window [title="win0"] move to workspace $ws5 floating enable
 for_window [class="jetbrains-idea"] move to workspace $ws3
 for_window [class="jetbrains-idea-ce"] move to workspace $ws3
+for_window [class="jetbrains-studio" title="splash"] floating enable
+for_window [class="jetbrains-studio" \
+title="New*|Save*|Delete*|Move*|Choose*|Second*|About.*|Schedule*|Implement*|Update*|Copy|Commit*|Revert*|Android Studio and*|win*"] floating enable
 
 # spotify
 for_window [class="Spotify"] move to workspace $ws4 floating enable border pixel 0

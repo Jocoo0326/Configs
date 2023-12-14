@@ -17,13 +17,13 @@ else
 fi
 # wallpapers_path=~/Configs/home_dotfiles/.config
 # files=(`find $wallpapers_path -maxdepth 1 -type f -name "wall-*"`)
-wallpapers_path=/usr/share/backgrounds/manjaro-gnome
+wallpapers_path=/usr/share/backgrounds/wallpapers-2018
 files=(`find $wallpapers_path -maxdepth 1 -type f`)
 lastpic=-1
 while true; do
     randompic=`printf "%s\n" "${files[RANDOM % ${#files[@]}]}"`
     if [ $lastpic != $randompic ]; then
-      feh --bg-scale $randompic
+      feh --bg-fill $randompic
       lastpic=$randompic
       sleep $interval
     fi

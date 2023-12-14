@@ -33,6 +33,7 @@ alias in='adb shell input text'
 alias input='adb shell input text'
 alias sd='sudo docker'
 alias fh='free -h'
+alias neofetch='neofetch --ascii_distro Arch'
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
@@ -74,6 +75,7 @@ mem() {
 
 # disable system beep
 xset b off
+xset s 0 0
 export http_proxy=''
 export https_proxy=''
 export ftp_proxy=''
@@ -94,3 +96,4 @@ java11() {
 evict_following_java() {
   pgrep java | awk 'NR!=1 {system("kill -9 "$1)}'
 }
+. "$HOME/.cargo/env"
