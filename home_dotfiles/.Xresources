@@ -1,2 +1,5 @@
 *.font: FiraCode:pixelsize=12:antialias=true:autohint=true
 *.alpha: 243
+Emacs.alpha: 100
+*dpi: 192
+Xft.dpi: 192

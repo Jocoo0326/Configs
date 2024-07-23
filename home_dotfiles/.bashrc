@@ -34,6 +34,7 @@ alias input='adb shell input text'
 alias sd='sudo docker'
 alias fh='free -h'
 alias neofetch='neofetch --ascii_distro Arch'
+alias asd=\$HOME/android-studio/bin/studio.sh
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
@@ -43,8 +44,8 @@ if [[ $SHELL = "bash" ]]; then
   export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u \[\e[33m\]\w\[\e[0m\]\[\e[36m\]$(git_branch)\[\e[0m\]\n\[\e[35m\]\$\[\e[0m\] '
 fi
 
-export GRADLE_USER_HOME=/home/jocoo/d/.gradle
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+export GRADLE_USER_HOME=/home/jocoo/.gradle
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 #export ANDROID_JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export ANDROID_HOME=~/Android/Sdk
 #export NDK_HOME=~/Android/ndk/android-ndk-r20
@@ -96,4 +97,7 @@ java11() {
 evict_following_java() {
   pgrep java | awk 'NR!=1 {system("kill -9 "$1)}'
 }
-. "$HOME/.cargo/env"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

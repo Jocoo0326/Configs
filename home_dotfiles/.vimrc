@@ -38,7 +38,7 @@ Plug 'SirVer/ultisnips'
 
 Plug 'honza/vim-snippets'
 
-Plug 'aquach/vim-http-client'
+" Plug 'aquach/vim-http-client'
 
 Plug 'vim-airline/vim-airline'
 
@@ -58,7 +58,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 Plug 'rhysd/vim-clang-format'
 
-Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'yarn install --frozen-lockfile' }
 
 if has('nvim')
   Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -477,7 +477,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+autocmd CursorHold *.c silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
@@ -485,3 +485,4 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+map <leader>s :CocList symbols<CR>
