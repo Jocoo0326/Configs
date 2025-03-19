@@ -34,7 +34,7 @@ alias input='adb shell input text'
 alias sd='sudo docker'
 alias fh='free -h'
 alias neofetch='neofetch --ascii_distro Arch'
-alias asd=\$HOME/android-studio/bin/studio.sh
+alias asd=\$HOME/android-studio/bin/studio
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
@@ -90,6 +90,11 @@ java17() {
 }
 java11() {
   export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+  export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
+  java -version
+}
+java8() {
+  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
   export PATH=$JAVA_HOME/bin:$PATH_NO_JAVA
   java -version
 }
