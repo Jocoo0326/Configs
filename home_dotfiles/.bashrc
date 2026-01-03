@@ -102,7 +102,4 @@ java8() {
 evict_following_java() {
   pgrep java | awk 'NR!=1 {system("kill -9 "$1)}'
 }
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+export QT_QPA_PLATFORMTHEME=qt6ct
