@@ -31,10 +31,18 @@ alias gps='git push'
 alias gc='git commit'
 alias in='adb shell input text'
 alias input='adb shell input text'
+alias adbtab='adb shell input keyevent KEYCODE_TAB'
 alias sd='sudo docker'
 alias fh='free -h'
 alias neofetch='neofetch --ascii_distro Arch'
-alias asd=\$HOME/android-studio/bin/studio
+alias asd='setsid -f "$HOME/android-studio/bin/studio" >/dev/null 2>&1 </dev/null'
+alias rider='setsid -f "$HOME/rider/bin/rider" >/dev/null 2>&1 </dev/null'
+alias codex='export ALL_PROXY=http://localhost:7891 && codex'
+alias pe='export ALL_PROXY=http://localhost:7891'
+alias pd='export ALL_PROXY=http://localhost:7891'
+alias gpe='git config --global http.proxy "http://localhost:7891" && git config --global https.proxy "http://localhost:7891"'
+alias gpd='git config --global http.proxy "" && git config --global https.proxy ""'
+alias chatgpt='pe && chatgpt'
 
 git_branch() {
   git status -bs 2> /dev/null | sed -e "s/## \(.*\)\.\.\..*/ (\1)/" | head -n 1
@@ -103,3 +111,5 @@ evict_following_java() {
   pgrep java | awk 'NR!=1 {system("kill -9 "$1)}'
 }
 export QT_QPA_PLATFORMTHEME=qt6ct
+
+[ -f ~/.private_env ] && source ~/.private_env
